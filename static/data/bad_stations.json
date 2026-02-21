@@ -1,0 +1,155 @@
+{
+  "version": "1.0.0",
+  "last_checked": "2026-02-21T21:18:00Z",
+  "source_report": "backend/playback_matrix_report.json",
+  "notes": "Stations in this list failed both direct and proxied health checks in the latest matrix run. Treat as blocked during future station ingestion until manually revalidated.",
+  "bad_station_ids": [
+    "worldwide",
+    "kiosk",
+    "thelot",
+    "lemellotron",
+    "soho",
+    "subcity",
+    "threads",
+    "frisky",
+    "ckcu",
+    "wxy",
+    "kiss-2020s",
+    "kpfa",
+    "wfmu-rock-n-soul-radio",
+    "kpoo-89-5-san-francisco-ca",
+    "cfim-92-7-cap-aux-meules-qc",
+    "wxna-101-5-nashville-tn-low-",
+    "radio-centraal-106-7fm",
+    "chip-101-7-fort-coulonge-qc",
+    "hochschulradio-aachen",
+    "cfff-92-7-trent-radio-peterb",
+    "wrek-91-1-atlanta-ga",
+    "radioverkko",
+    "kdvs-davis",
+    "radio-casa-pueblo",
+    "krcl-90-9-fm-salt-lake-city-",
+    "radio-blau",
+    "chha-1610-voces-latinas-toro",
+    "2fbi-fbi-radio-94-5-fm-sydne",
+    "wpsu-91-5-penn-state-univers"
+  ],
+  "failures": [
+    {
+      "id": "worldwide",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "kiosk",
+      "reason": "dns_resolution_failure"
+    },
+    {
+      "id": "thelot",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "lemellotron",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "soho",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "subcity",
+      "reason": "http_400"
+    },
+    {
+      "id": "threads",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "frisky",
+      "reason": "http_400"
+    },
+    {
+      "id": "ckcu",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "wxy",
+      "reason": "http_400"
+    },
+    {
+      "id": "kiss-2020s",
+      "reason": "dns_not_resolved"
+    },
+    {
+      "id": "kpfa",
+      "reason": "http_400"
+    },
+    {
+      "id": "wfmu-rock-n-soul-radio",
+      "reason": "http_400"
+    },
+    {
+      "id": "kpoo-89-5-san-francisco-ca",
+      "reason": "http_400"
+    },
+    {
+      "id": "cfim-92-7-cap-aux-meules-qc",
+      "reason": "http_400"
+    },
+    {
+      "id": "wxna-101-5-nashville-tn-low-",
+      "reason": "http_400"
+    },
+    {
+      "id": "radio-centraal-106-7fm",
+      "reason": "http_400"
+    },
+    {
+      "id": "chip-101-7-fort-coulonge-qc",
+      "reason": "http_400"
+    },
+    {
+      "id": "hochschulradio-aachen",
+      "reason": "http_400"
+    },
+    {
+      "id": "cfff-92-7-trent-radio-peterb",
+      "reason": "http_400"
+    },
+    {
+      "id": "wrek-91-1-atlanta-ga",
+      "reason": "http_400"
+    },
+    {
+      "id": "radioverkko",
+      "reason": "http_400"
+    },
+    {
+      "id": "kdvs-davis",
+      "reason": "http_400"
+    },
+    {
+      "id": "radio-casa-pueblo",
+      "reason": "upstream_disconnected"
+    },
+    {
+      "id": "krcl-90-9-fm-salt-lake-city-",
+      "reason": "http_400"
+    },
+    {
+      "id": "radio-blau",
+      "reason": "http_400"
+    },
+    {
+      "id": "chha-1610-voces-latinas-toro",
+      "reason": "http_501"
+    },
+    {
+      "id": "2fbi-fbi-radio-94-5-fm-sydne",
+      "reason": "http_400"
+    },
+    {
+      "id": "wpsu-91-5-penn-state-univers",
+      "reason": "upstream_disconnected"
+    }
+  ]
+}

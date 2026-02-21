@@ -1,0 +1,1195 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "stations": [
+    {
+      "station_id": "kexp",
+      "station_name": "KEXP 90.3 FM Seattle",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cjsw",
+      "station_name": "CJSW 90.9 FM Calgary",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wmse",
+      "station_name": "WMSE 91.7 FM Milwaukee",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "npr",
+      "station_name": "NPR Program Stream",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "fip",
+      "station_name": "FIP Radio France",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "dublab",
+      "station_name": "dublab",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "somafm-groove",
+      "station_name": "SomaFM Groove Salad",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "somafm-drone",
+      "station_name": "SomaFM Drone Zone",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radioparadise",
+      "station_name": "Radio Paradise",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "nts-1",
+      "station_name": "NTS Radio Live",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "worldwide",
+      "station_name": "Worldwide FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "kiosk",
+      "station_name": "Kiosk Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -3] Temporary failure in name resolution"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -3] Temporary failure in name resolution"
+      }
+    },
+    {
+      "station_id": "thelot",
+      "station_name": "The Lot Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "cashmere",
+      "station_name": "Cashmere Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "lemellotron",
+      "station_name": "Le Mellotron",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "soho",
+      "station_name": "Soho Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "subcity",
+      "station_name": "Subcity Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "threads",
+      "station_name": "Threads Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "frisky",
+      "station_name": "FRISKY Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "kzfr",
+      "station_name": "KZFR 90.1 FM Chico",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "ckcu",
+      "station_name": "CKCU 93.1 FM Ottawa",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "wxy",
+      "station_name": "WXYC 89.3 FM Chapel Hill",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "kiss-2020s",
+      "station_name": "KISS 2020s",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "[Errno -2] Name or service not known"
+      }
+    },
+    {
+      "station_id": "hirschmilch",
+      "station_name": "Hirschmilch Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "klnd-89-5-little-eagle-sd",
+      "station_name": "KLND 89.5 Little Eagle, SD",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "chry-vibe-105-5-york-univers",
+      "station_name": "CHRY \"Vibe 105.5\" York University Toronto, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "knct-simply-beautiful-copper",
+      "station_name": "KNCT - Simply Beautiful - Copperas Cove",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "krbx-89-9-93-5-radio-boise-b",
+      "station_name": "KRBX 89.9 & 93.5 \"Radio Boise\" Boise, ID",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wftu-1570-five-towns-college",
+      "station_name": "WFTU 1570 Five Towns College - Riverhead, NY",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "nts-radio-1",
+      "station_name": "NTS Radio 1",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cfwn-northumberland-89-7-cob",
+      "station_name": "CFWN \"Northumberland 89.7\" Cobourg, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "uam-radio-ciudad-de-m-xico-9",
+      "station_name": "UAM Radio (Ciudad de Mexico) - 94.1 FM - XHUAM-FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cfnj-99-1-saint-gabriel-de-b",
+      "station_name": "CFNJ 99.1 Saint-Gabriel-de-Brandon, QC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kpfa",
+      "station_name": "KPFA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "ches-91-7-erin-radio-on",
+      "station_name": "CHES 91.7 Erin Radio, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "allegheny-mountain-radio",
+      "station_name": "Allegheny Mountain Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kpcr-101-9-pirate-cat-radio",
+      "station_name": "KPCR 101.9 Pirate Cat Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cisf-107-7-pulse-fm-surrey-b",
+      "station_name": "CISF 107.7 Pulse FM Surrey, BC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cfuv-101-9-university-of-vic",
+      "station_name": "CFUV 101.9 University of Victoria, BC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-buap-puebla-96-9-fm-xh",
+      "station_name": "Radio BUAP (Puebla) - 96.9 FM - XHBUAP-FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "camfm-cambridge-university-s",
+      "station_name": "camfm Cambridge University Student Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wfmu-rock-n-soul-radio",
+      "station_name": "WFMU Rock n Soul Radio",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "kpoo-89-5-san-francisco-ca",
+      "station_name": "KPOO 89.5 San Francisco, CA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "cfim-92-7-cap-aux-meules-qc",
+      "station_name": "CFIM 92.7 Cap-Aux-Meules, QC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "radio-k-real-college-radio-k",
+      "station_name": "Radio K - Real College Radio (KUOM)",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wxna-101-5-nashville-tn-low-",
+      "station_name": "WXNA 101.5 Nashville, TN Low Power High Voltage",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "fraser-coast-fm-hervey-bay-1",
+      "station_name": "Fraser Coast FM - Hervey Bay - 107.5 FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-centraal-106-7fm",
+      "station_name": "Radio Centraal 106.7FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "waps-91-3-the-summit-akron-o",
+      "station_name": "WAPS 91.3 The Summit Akron, OH",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "pinguino-estereo",
+      "station_name": "Pinguino Estereo",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "rtrfm",
+      "station_name": "RTRFM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "bolton-fm",
+      "station_name": "Bolton FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "chip-101-7-fort-coulonge-qc",
+      "station_name": "CHIP 101.7 Fort Coulonge, QC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "hochschulradio-aachen",
+      "station_name": "Hochschulradio Aachen",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "cfta-107-9-tantramar-fm-amhe",
+      "station_name": "CFTA 107.9 Tantramar FM Amherst, NS",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cfff-92-7-trent-radio-peterb",
+      "station_name": "CFFF 92.7 Trent Radio Peterborough, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "nts-radio-2",
+      "station_name": "NTS Radio 2",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wrek-91-1-atlanta-ga",
+      "station_name": "WREK 91.1 Atlanta, GA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "wired-fm-fm-99-9-limerick-ir",
+      "station_name": "Wired FM - FM 99.9 - Limerick, Ireland",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kosmos-94-1",
+      "station_name": "Kosmos 94.1",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wpsu-hd2-public-radio-mix-st",
+      "station_name": "WPSU-HD2 Public Radio Mix Stream - State College, PA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radioverkko",
+      "station_name": "Radioverkko",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "kdna-91-9-la-voz-del-campesi",
+      "station_name": "KDNA 91.9 La Voz del Campesino Yakima, WA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wrfg-89-3fm-atlanta-ga",
+      "station_name": "WRFG 89.3FM Atlanta, GA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kdvs-davis",
+      "station_name": "KDVS Davis",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "wbez-hd2-vocalo-stream-chica",
+      "station_name": "WBEZ-HD2 Vocalo Stream Chicago, IL",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "galaxy-107-fm-kawerau",
+      "station_name": "Galaxy 107 FM Kawerau",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "chyz-94-3-universite-laval-q",
+      "station_name": "CHYZ 94.3 Universite Laval Quebec City, QC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-casa-pueblo",
+      "station_name": "Radio Casa Pueblo",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "Server disconnected without sending a response."
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "Server disconnected without sending a response."
+      }
+    },
+    {
+      "station_id": "krcl-90-9-fm-salt-lake-city-",
+      "station_name": "KRCL 90.9 FM Salt Lake City, UT high",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "radio-blau",
+      "station_name": "Radio Blau",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "kcep-88-1-power-88-las-vegas",
+      "station_name": "KCEP 88.1 Power 88 Las Vegas, NV",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "chha-1610-voces-latinas-toro",
+      "station_name": "CHHA 1610 Voces Latinas Toronto, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=501"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=501"
+      }
+    },
+    {
+      "station_id": "ucm-the-beat",
+      "station_name": "UCM-The Beat",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "islands-fm",
+      "station_name": "Islands FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "2fbi-fbi-radio-94-5-fm-sydne",
+      "station_name": "2FBI FBi Radio 94.5 FM Sydney, NSW",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "status=400"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "status=400"
+      }
+    },
+    {
+      "station_id": "cjbb-103-1-the-train-engleha",
+      "station_name": "CJBB 103.1 The Train Englehart, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "refuge-worldwide",
+      "station_name": "Refuge Worldwide",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "cbfm-ca-gaelic-college-st-an",
+      "station_name": "CBFM.ca Gaelic College St. Ann's, NS",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "ckwr-98-5-real-community-rad",
+      "station_name": "CKWR 98.5 Real Community Radio Kitchener, ON",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "foundation-fm",
+      "station_name": "Foundation FM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "3cr",
+      "station_name": "3CR",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wuot-91-9-fm-knoxville-tn",
+      "station_name": "WUOT 91.9 FM Knoxville, TN",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wpsu-91-5-penn-state-univers",
+      "station_name": "WPSU 91.5 Penn State University State College, PA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "Server disconnected without sending a response."
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "Server disconnected without sending a response."
+      }
+    },
+    {
+      "station_id": "kunm-89-9-new-mexico-public-",
+      "station_name": "KUNM 89.9 New Mexico Public Radio Albuquerque, NM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    }
+  ]
+}
