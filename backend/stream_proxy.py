@@ -1,147 +1,143 @@
-# backend/stream_proxy.py
 """
-Stream Proxy - Routes streams through backend to bypass CORS
+Stream proxy used to bypass browser CORS restrictions for audio streams.
 """
 
-from fastapi import APIRouter, HTTPException, Response
+from __future__ import annotations
+
+from typing import Any
+
+import httpx
+from fastapi import APIRouter, HTTPException, Query, Response
 from fastapi.responses import StreamingResponse
-import aiohttp
-import ssl
-from typing import Optional
+from starlette.background import BackgroundTask
 
-router = APIRouter()
+from station_registry import StationRegistry
 
-# SSL context that ignores cert errors (for development)
-# In production, use proper certs
-ssl_context = ssl.create_default_context()
-ssl_context.check_hostname = False
-ssl_context.verify_mode = ssl.CERT_NONE
 
-async def fetch_stream(url: str, station_id: Optional[str] = None):
-    """
-    Fetch stream from source with error handling
-    Returns tuple of (content_iterator, headers, status_code)
-    """
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                url, 
-                ssl=ssl_context,
-                timeout=aiohttp.ClientTimeout(total=30),
-                headers={
-                    "User-Agent": "Mozilla/5.0 (compatible; RadioAgnostic/1.0)",
-                    "Accept": "audio/mpeg,audio/aac,audio/ogg,*/*",
-                    "Icy-Metadata": "1"  # Request metadata
-                }
-            ) as resp:
-                
-                if resp.status != 200:
-                    return None, None, resp.status
-                
-                # Extract relevant headers
-                headers = {}
-                for key in ["Content-Type", "icy-name", "icy-genre", "icy-br", "icy-metaint"]:
-                    if key in resp.headers:
-                        headers[key] = resp.headers[key]
-                
-                # Add CORS header for browser
-                headers["Access-Control-Allow-Origin"] = "*"
-                headers["Access-Control-Allow-Methods"] = "GET, OPTIONS"
-                
-                return resp.content.iter_chunked(8192), headers, 200
-                
-    except aiohttp.ClientError as e:
-        print(f"Client error fetching {url}: {e}")
-        return None, None, 502
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return None, None, 500
+ICY_HEADERS = {"icy-name", "icy-genre", "icy-br", "icy-metaint", "content-type", "cache-control"}
 
-@router.get("/stream/{station_id}")
-async def proxy_station_stream(station_id: str):
-    """
-    Proxy stream for a specific station
-    This bypasses CORS restrictions by routing through our backend
-    """
-    from main import stations_db
-    
-    station = stations_db.get(station_id)
-    if not station:
-        raise HTTPException(status_code=404, detail="Station not found")
-    
-    # Get primary stream URL
-    stream_url = None
-    for stream in station.streams:
-        if stream.is_primary:
-            stream_url = stream.url
-            break
-    
-    if not stream_url and station.streams:
-        stream_url = station.streams[0].url
-    
-    if not stream_url:
-        raise HTTPException(status_code=404, detail="No stream URL available")
-    
-    content_iter, headers, status = await fetch_stream(stream_url, station_id)
-    
-    if status != 200:
-        raise HTTPException(status_code=status, detail=f"Stream unavailable")
-    
-    return StreamingResponse(
-        content_iter,
-        media_type=headers.get("Content-Type", "audio/mpeg"),
-        headers=headers
-    )
 
-@router.get("/health/{station_id}")
-async def check_stream_health(station_id: str):
-    """
-    Check if a station's stream is healthy without consuming bandwidth
-    """
-    from main import stations_db
-    
-    station = stations_db.get(station_id)
-    if not station:
-        raise HTTPException(status_code=404, detail="Station not found")
-    
-    stream_url = None
-    for stream in station.streams:
-        if stream.is_primary:
-            stream_url = stream.url
-            break
-    
-    if not stream_url:
-        return {"healthy": False, "error": "No stream URL"}
-    
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.head(
-                stream_url,
-                ssl=ssl_context,
-                timeout=aiohttp.ClientTimeout(total=10),
-                allow_redirects=True
-            ) as resp:
-                healthy = resp.status == 200
-                return {
-                    "healthy": healthy,
-                    "status": resp.status,
-                    "content_type": resp.headers.get("Content-Type"),
-                    "icy_name": resp.headers.get("icy-name")
-                }
-    except Exception as e:
-        return {
-            "healthy": False,
-            "error": str(e)
-        }
+def _extract_forward_headers(upstream_headers: httpx.Headers) -> dict[str, str]:
+    headers: dict[str, str] = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Icy-Metadata",
+    }
+    for key, value in upstream_headers.items():
+        if key.lower() in ICY_HEADERS:
+            headers[key] = value
+    return headers
 
-@router.options("/{path:path}")
-async def cors_preflight(path: str):
-    """Handle CORS preflight requests"""
-    return Response(
-        content="",
-        headers={
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Icy-Metadata",
-        }
-    )
+
+def create_router(registry: StationRegistry) -> APIRouter:
+    router = APIRouter()
+
+    @router.get("/stream/{station_id}")
+    async def proxy_station_stream(
+        station_id: str,
+        stream_index: int | None = Query(default=None, ge=0),
+        retries: int = Query(default=1, ge=0, le=3),
+    ):
+        station = registry.get_station(station_id)
+        if not station:
+            raise HTTPException(status_code=404, detail="Station not found")
+
+        stream_candidates = registry.resolve_stream_candidates(station_id, stream_index)
+        if not stream_candidates:
+            raise HTTPException(status_code=404, detail="No stream URL available")
+
+        last_error: str | None = None
+        for candidate in stream_candidates:
+            url = candidate.get("url")
+            if not isinstance(url, str):
+                continue
+            if not registry.is_allowed_stream(station_id, url):
+                continue
+
+            verify_tls = not bool(candidate.get("allow_insecure_tls", False))
+            for _ in range(retries + 1):
+                try:
+                    client = httpx.AsyncClient(
+                        follow_redirects=True,
+                        timeout=httpx.Timeout(connect=8.0, read=None, write=10.0, pool=20.0),
+                        verify=verify_tls,
+                    )
+                    request = client.build_request(
+                        "GET",
+                        url,
+                        headers={
+                            "User-Agent": "RadioAgnostic/0.7 (+https://radio-agnostic.local)",
+                            "Accept": "audio/mpeg,audio/aac,audio/ogg,*/*",
+                            "Icy-Metadata": "1",
+                        },
+                    )
+                    upstream = await client.send(request, stream=True)
+                    if upstream.status_code != 200:
+                        last_error = f"upstream_status_{upstream.status_code}"
+                        await upstream.aclose()
+                        await client.aclose()
+                        continue
+
+                    headers = _extract_forward_headers(upstream.headers)
+                    media_type = upstream.headers.get("content-type", "audio/mpeg")
+                    return StreamingResponse(
+                        upstream.aiter_bytes(chunk_size=16384),
+                        media_type=media_type,
+                        headers=headers,
+                        background=BackgroundTask(_close_upstream, upstream, client),
+                    )
+                except Exception as exc:  # pragma: no cover
+                    last_error = str(exc)
+                    continue
+
+        raise HTTPException(status_code=502, detail=f"Stream unavailable: {last_error or 'unknown_error'}")
+
+    @router.get("/health/{station_id}")
+    async def check_stream_health(station_id: str):
+        station = registry.get_station(station_id)
+        if not station:
+            raise HTTPException(status_code=404, detail="Station not found")
+
+        results: list[dict[str, Any]] = []
+        for idx, stream in enumerate(registry.resolve_stream_candidates(station_id)):
+            url = stream.get("url")
+            if not isinstance(url, str):
+                continue
+            verify_tls = not bool(stream.get("allow_insecure_tls", False))
+            try:
+                async with httpx.AsyncClient(
+                    follow_redirects=True,
+                    timeout=httpx.Timeout(connect=6.0, read=10.0, write=10.0, pool=20.0),
+                    verify=verify_tls,
+                ) as client:
+                    response = await client.head(url, headers={"User-Agent": "RadioAgnostic/0.7"})
+                    results.append(
+                        {
+                            "stream_index": idx,
+                            "healthy": response.status_code == 200,
+                            "status": response.status_code,
+                            "content_type": response.headers.get("content-type"),
+                        }
+                    )
+            except Exception as exc:  # pragma: no cover
+                results.append({"stream_index": idx, "healthy": False, "error": str(exc)})
+
+        return {"station_id": station_id, "streams": results}
+
+    @router.options("/{path:path}")
+    async def cors_preflight(path: str):
+        return Response(
+            content="",
+            headers={
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Icy-Metadata",
+            },
+        )
+
+    return router
+
+
+async def _close_upstream(upstream: httpx.Response, client: httpx.AsyncClient) -> None:
+    await upstream.aclose()
+    await client.aclose()

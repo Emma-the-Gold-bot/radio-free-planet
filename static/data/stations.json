@@ -1,6 +1,6 @@
 {
-  "version": "0.5.1 - Netlify Compatible (27 stations)",
-  "last_updated": "2026-02-21T08:42:46.697808",
+  "version": "0.8.0",
+  "last_updated": "2026-02-21T21:18:00Z",
   "stations": [
     {
       "id": "kexp",
@@ -53,10 +53,9 @@
       "website": "https://cjsw.com",
       "timezone": "America/Edmonton",
       "genres": [
+        "eclectic",
         "community",
-        "indie",
-        "experimental",
-        "electronic"
+        "indie"
       ],
       "cors_status": "open"
     },
@@ -82,16 +81,14 @@
       "website": "https://wmse.org",
       "timezone": "America/Chicago",
       "genres": [
+        "eclectic",
         "college",
-        "indie",
-        "rock",
-        "punk"
+        "metal"
       ],
       "cors_status": "open"
     },
     {
       "id": "npr",
-      "callsign": "NPR",
       "name": "NPR Program Stream",
       "location": {
         "city": "Washington",
@@ -112,8 +109,8 @@
       "timezone": "America/New_York",
       "genres": [
         "news",
-        "talk",
-        "public affairs"
+        "public radio",
+        "talk"
       ],
       "cors_status": "open"
     },
@@ -123,7 +120,6 @@
       "name": "FIP Radio France",
       "location": {
         "city": "Paris",
-        "state": "\u00cele-de-France",
         "country": "France",
         "lat": 48.8566,
         "lng": 2.3522
@@ -136,19 +132,18 @@
           "is_primary": true
         }
       ],
-      "website": "https://www.radiofrance.fr/fip",
+      "website": "https://fip.fr",
       "timezone": "Europe/Paris",
       "genres": [
         "eclectic",
-        "jazz",
         "world",
-        "electronic"
+        "jazz",
+        "electronica"
       ],
       "cors_status": "open"
     },
     {
       "id": "dublab",
-      "callsign": "DUBLAB",
       "name": "dublab",
       "location": {
         "city": "Los Angeles",
@@ -168,16 +163,14 @@
       "website": "https://dublab.com",
       "timezone": "America/Los_Angeles",
       "genres": [
-        "experimental",
         "electronic",
-        "ambient",
+        "experimental",
         "beats"
       ],
       "cors_status": "open"
     },
     {
       "id": "somafm-groove",
-      "callsign": "SomaFM",
       "name": "SomaFM Groove Salad",
       "location": {
         "city": "San Francisco",
@@ -194,18 +187,17 @@
           "is_primary": true
         }
       ],
-      "website": "https://somafm.com/groovesalad",
+      "website": "https://somafm.com",
       "timezone": "America/Los_Angeles",
       "genres": [
         "ambient",
-        "electronic",
-        "chill"
+        "chillout",
+        "downtempo"
       ],
       "cors_status": "open"
     },
     {
       "id": "somafm-drone",
-      "callsign": "SomaFM",
       "name": "SomaFM Drone Zone",
       "location": {
         "city": "San Francisco",
@@ -222,7 +214,7 @@
           "is_primary": true
         }
       ],
-      "website": "https://somafm.com/dronezone",
+      "website": "https://somafm.com",
       "timezone": "America/Los_Angeles",
       "genres": [
         "ambient",
@@ -233,7 +225,6 @@
     },
     {
       "id": "radioparadise",
-      "callsign": "RP",
       "name": "Radio Paradise",
       "location": {
         "city": "Paradise",
@@ -255,17 +246,15 @@
       "genres": [
         "eclectic",
         "rock",
-        "alternative"
+        "adult album alternative"
       ],
       "cors_status": "open"
     },
     {
       "id": "nts-1",
-      "callsign": "NTS",
       "name": "NTS Radio Live",
       "location": {
         "city": "London",
-        "state": "England",
         "country": "UK",
         "lat": 51.5074,
         "lng": -0.1278
@@ -281,20 +270,17 @@
       "website": "https://nts.live",
       "timezone": "Europe/London",
       "genres": [
+        "underground",
         "experimental",
-        "electronic",
-        "hip-hop",
-        "jazz"
+        "eclectic"
       ],
       "cors_status": "open"
     },
     {
       "id": "worldwide",
-      "callsign": "WWFM",
       "name": "Worldwide FM",
       "location": {
         "city": "London",
-        "state": "England",
         "country": "UK",
         "lat": 51.5074,
         "lng": -0.1278
@@ -310,20 +296,18 @@
       "website": "https://worldwidefm.net",
       "timezone": "Europe/London",
       "genres": [
-        "jazz",
         "soul",
-        "world",
-        "electronic"
+        "jazz",
+        "global"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "kiosk",
-      "callsign": "KIOSK",
       "name": "Kiosk Radio",
       "location": {
         "city": "Brussels",
-        "state": "Brussels-Capital",
         "country": "Belgium",
         "lat": 50.8503,
         "lng": 4.3517
@@ -331,7 +315,7 @@
       "streams": [
         {
           "format": "mp3",
-          "url": "https://kioskradio.out.airtime.pro/kioskradio_a",
+          "url": "https://kioskradio.ice.infomaniak.ch/kioskradio-128.mp3",
           "quality": "high",
           "is_primary": true
         }
@@ -340,15 +324,13 @@
       "timezone": "Europe/Brussels",
       "genres": [
         "electronic",
-        "disco",
-        "house",
-        "world"
+        "house"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "thelot",
-      "callsign": "LOT",
       "name": "The Lot Radio",
       "location": {
         "city": "Brooklyn",
@@ -365,23 +347,21 @@
           "is_primary": true
         }
       ],
-      "website": "https://www.thelotradio.com",
+      "website": "https://thelotradio.com",
       "timezone": "America/New_York",
       "genres": [
-        "electronic",
-        "disco",
         "house",
-        "indie"
+        "disco",
+        "techno"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "cashmere",
-      "callsign": "CASH",
       "name": "Cashmere Radio",
       "location": {
         "city": "Berlin",
-        "state": "Berlin",
         "country": "Germany",
         "lat": 52.52,
         "lng": 13.405
@@ -398,19 +378,15 @@
       "timezone": "Europe/Berlin",
       "genres": [
         "experimental",
-        "electronic",
-        "ambient",
-        "field recordings"
+        "community"
       ],
       "cors_status": "open"
     },
     {
       "id": "lemellotron",
-      "callsign": "MELL",
       "name": "Le Mellotron",
       "location": {
         "city": "Paris",
-        "state": "\u00cele-de-France",
         "country": "France",
         "lat": 48.8566,
         "lng": 2.3522
@@ -423,52 +399,47 @@
           "is_primary": true
         }
       ],
-      "website": "https://www.lemellotron.com",
+      "website": "https://lemellotron.com",
       "timezone": "Europe/Paris",
       "genres": [
-        "jazz",
         "soul",
-        "hip-hop",
-        "electronic"
+        "jazz",
+        "global"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "soho",
-      "callsign": "SOHO",
       "name": "Soho Radio",
       "location": {
         "city": "London",
-        "state": "England",
         "country": "UK",
-        "lat": 51.5133,
-        "lng": -0.1319
+        "lat": 51.5074,
+        "lng": -0.1278
       },
       "streams": [
         {
           "format": "mp3",
-          "url": "https://sohoradiolondon.out.airtime.pro/sohoradiolondon_a",
+          "url": "https://sohoradio.radioca.st/;",
           "quality": "high",
           "is_primary": true
         }
       ],
-      "website": "https://sohoradiolondon.com",
+      "website": "https://sohoradio.com",
       "timezone": "Europe/London",
       "genres": [
-        "indie",
-        "electronic",
-        "jazz",
-        "talk"
+        "eclectic",
+        "underground"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "subcity",
-      "callsign": "SUB",
       "name": "Subcity Radio",
       "location": {
         "city": "Glasgow",
-        "state": "Scotland",
         "country": "UK",
         "lat": 55.8609,
         "lng": -4.2514
@@ -476,7 +447,7 @@
       "streams": [
         {
           "format": "mp3",
-          "url": "https://subcity.out.airtime.pro/subcity_a",
+          "url": "https://stream.subcity.org/listen",
           "quality": "high",
           "is_primary": true
         }
@@ -484,20 +455,17 @@
       "website": "https://subcity.org",
       "timezone": "Europe/London",
       "genres": [
-        "electronic",
         "bass",
-        "experimental",
-        "indie"
+        "electronic"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "threads",
-      "callsign": "THREADS",
       "name": "Threads Radio",
       "location": {
         "city": "London",
-        "state": "England",
         "country": "UK",
         "lat": 51.5074,
         "lng": -0.1278
@@ -513,16 +481,15 @@
       "website": "https://threadsradio.com",
       "timezone": "Europe/London",
       "genres": [
-        "electronic",
         "bass",
-        "jungle",
-        "grime"
+        "grime",
+        "techno"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "frisky",
-      "callsign": "FRISKY",
       "name": "FRISKY Radio",
       "location": {
         "city": "New York",
@@ -534,75 +501,20 @@
       "streams": [
         {
           "format": "mp3",
-          "url": "https://friskyradio.out.airtime.pro/friskyradio_a",
+          "url": "https://stream.friskyradio.com/frisky_mp3_hi",
           "quality": "high",
           "is_primary": true
         }
       ],
-      "website": "https://www.friskyradio.com",
+      "website": "https://friskyradio.com",
       "timezone": "America/New_York",
       "genres": [
-        "deep house",
-        "progressive",
-        "techno"
-      ],
-      "cors_status": "open"
-    },
-    {
-      "id": "kiss-2020s",
-      "callsign": "KISS2020",
-      "name": "KISS 2020s",
-      "location": {
-        "city": "London",
-        "state": "England",
-        "country": "UK",
-        "lat": 51.5074,
-        "lng": -0.1278
-      },
-      "streams": [
-        {
-          "format": "mp3",
-          "url": "https://stream.kissfmradio.ro/2020s",
-          "quality": "high",
-          "is_primary": true
-        }
-      ],
-      "website": "https://www.kissfm.ro",
-      "timezone": "Europe/London",
-      "genres": [
-        "pop",
-        "dance",
-        "hits"
-      ],
-      "cors_status": "open"
-    },
-    {
-      "id": "hirschmilch",
-      "callsign": "HIRSCH",
-      "name": "Hirschmilch Radio",
-      "location": {
-        "city": "Berlin",
-        "state": "Berlin",
-        "country": "Germany",
-        "lat": 52.52,
-        "lng": 13.405
-      },
-      "streams": [
-        {
-          "format": "mp3",
-          "url": "https://hirschmilch.de:7000/prog-house.mp3",
-          "quality": "high",
-          "is_primary": true
-        }
-      ],
-      "website": "https://hirschmilch.de",
-      "timezone": "Europe/Berlin",
-      "genres": [
-        "progressive house",
         "techno",
-        "psytrance"
+        "house",
+        "deep house"
       ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "kzfr",
@@ -618,7 +530,7 @@
       "streams": [
         {
           "format": "mp3",
-          "url": "https://stream.kzfr.org:8443/stream",
+          "url": "https://listen.kzfr.org/stream",
           "quality": "high",
           "is_primary": true
         }
@@ -627,136 +539,38 @@
       "timezone": "America/Los_Angeles",
       "genres": [
         "community",
-        "variety",
-        "indie",
-        "news"
+        "eclectic"
       ],
-      "cors_status": "open"
-    },
-    {
-      "id": "wusb",
-      "callsign": "WUSB",
-      "name": "WUSB 90.1 FM Stony Brook",
-      "location": {
-        "city": "Stony Brook",
-        "state": "NY",
-        "country": "USA",
-        "lat": 40.9257,
-        "lng": -73.1415
-      },
-      "streams": [
-        {
-          "format": "mp3",
-          "url": "https://stream.wusb.stonybrook.edu:8092/stream",
-          "quality": "high",
-          "is_primary": true
-        }
-      ],
-      "website": "https://wusb.fm",
-      "timezone": "America/New_York",
-      "genres": [
-        "college",
-        "variety",
-        "reggae",
-        "experimental"
-      ],
-      "cors_status": "open"
-    },
-    {
-      "id": "kpsu",
-      "callsign": "KPSU",
-      "name": "KPSU 1450 AM Portland",
-      "location": {
-        "city": "Portland",
-        "state": "OR",
-        "country": "USA",
-        "lat": 45.5152,
-        "lng": -122.6784
-      },
-      "streams": [
-        {
-          "format": "mp3",
-          "url": "https://streamer.radio.co/scad0c5a7f/listen",
-          "quality": "high",
-          "is_primary": true
-        }
-      ],
-      "website": "https://kpsu.org",
-      "timezone": "America/Los_Angeles",
-      "genres": [
-        "college",
-        "indie",
-        "experimental",
-        "electronic"
-      ],
-      "cors_status": "open"
-    },
-    {
-      "id": "ktru",
-      "callsign": "KTRU",
-      "name": "KTRU 96.1 FM Houston",
-      "location": {
-        "city": "Houston",
-        "state": "TX",
-        "country": "USA",
-        "lat": 29.7604,
-        "lng": -95.3698
-      },
-      "streams": [
-        {
-          "format": "mp3",
-          "url": "https://ktru.rice.edu:8000/ktru-mp3",
-          "quality": "high",
-          "is_primary": true
-        }
-      ],
-      "website": "https://ktru.org",
-      "timezone": "America/Chicago",
-      "genres": [
-        "college",
-        "experimental",
-        "indie",
-        "noise"
-      ],
-      "cors_status": "open"
+      "cors_status": "open",
+      "health_status": "validated"
     },
     {
       "id": "ckcu",
+      "callsign": "CKCU",
       "name": "CKCU 93.1 FM Ottawa",
-      "description": "Community radio from Ottawa, Ontario featuring diverse local programming",
       "location": {
         "city": "Ottawa",
-        "country": "Canada"
+        "state": "ON",
+        "country": "Canada",
+        "lat": 45.4215,
+        "lng": -75.6972
       },
-      "timezone": "America/Toronto",
-      "stream": {
-        "url": "https://stream2.statsradio.com:8122/stream",
-        "type": "audio/mpeg",
-        "bitrate": 128
-      },
-      "website": "https://www.ckcufm.com",
-      "social": {
-        "twitter": "@ckcufm",
-        "facebook": "CKCUFM"
-      },
-      "genres": [
-        "community",
-        "variety",
-        "local",
-        "canadian"
-      ],
-      "language": "en",
-      "status": "active",
-      "source": "community",
       "streams": [
         {
           "format": "mp3",
-          "url": "https://stream2.statsradio.com:8122/stream",
+          "url": "https://stream.ckcufm.com/ckcu-128.mp3",
           "quality": "high",
           "is_primary": true
         }
       ],
-      "cors_status": "open"
+      "website": "https://ckcufm.com",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community",
+        "eclectic"
+      ],
+      "cors_status": "open",
+      "health_status": "bad"
     },
     {
       "id": "wxy",
@@ -784,7 +598,1839 @@
         "freeform",
         "eclectic"
       ],
+      "cors_status": "open",
+      "health_status": "bad"
+    },
+    {
+      "id": "kiss-2020s",
+      "name": "KISS 2020s",
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream.kissfmuk.com/kiss-2020s-128.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kissfm.com",
+      "timezone": "Europe/London",
+      "genres": [
+        "pop",
+        "2020s",
+        "charts"
+      ],
+      "cors_status": "open",
+      "health_status": "bad"
+    },
+    {
+      "id": "hirschmilch",
+      "name": "Hirschmilch Radio",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://hirschmilch.de:7000/techno.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://hirschmilch.de",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "techno",
+        "electronic",
+        "progressive"
+      ],
       "cors_status": "open"
+    },
+    {
+      "id": "klnd-89-5-little-eagle-sd",
+      "callsign": "KLND",
+      "name": "KLND 89.5 Little Eagle, SD",
+      "location": {
+        "city": "South Dakota",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://ice10.securenetsystems.net/KLND",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://klndradio895.com/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "chry-vibe-105-5-york-univers",
+      "callsign": "CHRY",
+      "name": "CHRY \"Vibe 105.5\" York University Toronto, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://ice7.securenetsystems.net/CHRY",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.vibe1055.com/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "knct-simply-beautiful-copper",
+      "callsign": "KNCT",
+      "name": "KNCT - Simply Beautiful - Copperas Cove",
+      "location": {
+        "city": "Texas",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://ice41.securenetsystems.net/KNCT",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://knct.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "krbx-89-9-93-5-radio-boise-b",
+      "callsign": "KRBX",
+      "name": "KRBX 89.9 & 93.5 \"Radio Boise\" Boise, ID",
+      "location": {
+        "city": "Idaho",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://radioboise-ice.streamguys1.com/live",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://radioboise.us/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wftu-1570-five-towns-college",
+      "callsign": "WFTU",
+      "name": "WFTU 1570 Five Towns College - Riverhead, NY",
+      "location": {
+        "city": "New York",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://ice64.securenetsystems.net/WFTU",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.ftc.edu/student-life/wftu/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "nts-radio-1",
+      "callsign": "NTS",
+      "name": "NTS Radio 1",
+      "location": {
+        "city": "London",
+        "state": "GB",
+        "country": "The United Kingdom Of Great Britain And ",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream-relay-geo.ntslive.net/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.nts.live/",
+      "timezone": "Europe/London",
+      "genres": [
+        "community",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cfwn-northumberland-89-7-cob",
+      "callsign": "CFWN",
+      "name": "CFWN \"Northumberland 89.7\" Cobourg, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://northumberland.serverroom.net:8850/;",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.northumberland897.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "uam-radio-ciudad-de-m-xico-9",
+      "callsign": "UAM",
+      "name": "UAM Radio (Ciudad de Mexico) - 94.1 FM - XHUAM-FM",
+      "location": {
+        "city": "Ciudad de Mexico",
+        "state": "MX",
+        "country": "Mexico",
+        "lat": 19.43314809847083,
+        "lng": -99.13526058197024
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream5.mexiserver.com:1124/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://uamradio.uam.mx/",
+      "timezone": "America/Mexico_City",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cfnj-99-1-saint-gabriel-de-b",
+      "callsign": "CFNJ",
+      "name": "CFNJ 99.1 Saint-Gabriel-de-Brandon, QC",
+      "location": {
+        "city": "Quebec",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://cfnjzp.mine.nu:9700/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://cfnj.net/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kpfa",
+      "callsign": "KPFA",
+      "name": "KPFA",
+      "location": {
+        "city": "California",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streams.kpfa.org:8443/kpfa",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kpfa.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "ches-91-7-erin-radio-on",
+      "callsign": "CHES",
+      "name": "CHES 91.7 Erin Radio, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streaming.radio.co/saa34f11f4/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.erinradio.org/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "allegheny-mountain-radio",
+      "callsign": "ALLEGHENY",
+      "name": "Allegheny Mountain Radio",
+      "location": {
+        "city": "West Virginia",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://amber.streamguys.com:5750/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.alleghenymountainradio.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kpcr-101-9-pirate-cat-radio",
+      "callsign": "KPCR",
+      "name": "KPCR 101.9 Pirate Cat Radio",
+      "location": {
+        "city": "California",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 36.99235248542664,
+        "lng": -122.06068038940433
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://perseus.shoutca.st:9679/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kpcr.org/pirate-cat-radio",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cisf-107-7-pulse-fm-surrey-b",
+      "callsign": "CISF",
+      "name": "CISF 107.7 Pulse FM Surrey, BC",
+      "location": {
+        "city": "British Columbia",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://cisffm.streamon.fm/stream/CISFFM-48k.aac",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.pulsefm.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cfuv-101-9-university-of-vic",
+      "callsign": "CFUV",
+      "name": "CFUV 101.9 University of Victoria, BC",
+      "location": {
+        "city": "British Columbia",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://cfuv.streamon.fm:8000/CFUV-64k.aac",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://cfuv.uvic.ca/cms/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-buap-puebla-96-9-fm-xh",
+      "callsign": "RADIO",
+      "name": "Radio BUAP (Puebla) - 96.9 FM - XHBUAP-FM",
+      "location": {
+        "city": "Puebla",
+        "state": "MX",
+        "country": "Mexico",
+        "lat": 19.045729992210426,
+        "lng": -98.1984615325928
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://148.228.50.32:8000/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://radiobuap.com/",
+      "timezone": "America/Mexico_City",
+      "genres": [
+        "college",
+        "public radio"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "camfm-cambridge-university-s",
+      "callsign": "CAMFM",
+      "name": "camfm Cambridge University Student Radio",
+      "location": {
+        "city": "United Kingdom",
+        "state": "GB",
+        "country": "United Kingdom",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.camfm.co.uk/camfm",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.camfm.co.uk/",
+      "timezone": "Europe/London",
+      "genres": [
+        "college",
+        "campus"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wfmu-rock-n-soul-radio",
+      "callsign": "WFMU",
+      "name": "WFMU Rock n Soul Radio",
+      "location": {
+        "city": "New Jersey",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream0.wfmu.org/rocknsoul",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://wfmu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "kpoo-89-5-san-francisco-ca",
+      "callsign": "KPOO",
+      "name": "KPOO 89.5 San Francisco, CA",
+      "location": {
+        "city": "California",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://amber.streamguys.com:5220/xstream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.kpoo.com/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "cfim-92-7-cap-aux-meules-qc",
+      "callsign": "CFIM",
+      "name": "CFIM 92.7 Cap-Aux-Meules, QC",
+      "location": {
+        "city": "Quebec",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream02.ustream.ca:8000/cfim128.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.cfim.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "radio-k-real-college-radio-k",
+      "callsign": "RADIO",
+      "name": "Radio K - Real College Radio (KUOM)",
+      "location": {
+        "city": "Minnesota",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 44.97045321306796,
+        "lng": -93.242571595038
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://radiok.broadcasttool.stream/play_256",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://radiok.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wxna-101-5-nashville-tn-low-",
+      "callsign": "WXNA",
+      "name": "WXNA 101.5 Nashville, TN Low Power High Voltage",
+      "location": {
+        "city": "Tennessee",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://listen.wxnafm.org:8000/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.wxnafm.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "fraser-coast-fm-hervey-bay-1",
+      "callsign": "FRASER",
+      "name": "Fraser Coast FM - Hervey Bay - 107.5 FM",
+      "location": {
+        "city": "Queensland",
+        "state": "AU",
+        "country": "Australia",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/4FCRAAC.aac",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.frasercoast.fm/",
+      "timezone": "Australia/Sydney",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-centraal-106-7fm",
+      "callsign": "RADIO",
+      "name": "Radio Centraal 106.7FM",
+      "location": {
+        "city": "Belgium",
+        "state": "BE",
+        "country": "Belgium",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streams.movemedia.eu:8530/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.radiocentraal.be/",
+      "timezone": "Europe/Brussels",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "waps-91-3-the-summit-akron-o",
+      "callsign": "WAPS",
+      "name": "WAPS 91.3 The Summit Akron, OH",
+      "location": {
+        "city": "Ohio",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streamer2.legatocommunications.com/wapshq",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.thesummit.fm/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "pinguino-estereo",
+      "callsign": "PINGUINO",
+      "name": "Pinguino Estereo",
+      "location": {
+        "city": "Cali",
+        "state": "CO",
+        "country": "Colombia",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://radiolatina.info:9750/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://pinguinostereo1069.blogspot.com/",
+      "timezone": "America/Bogota",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "rtrfm",
+      "callsign": "RTRFM",
+      "name": "RTRFM",
+      "location": {
+        "city": "Western Australia",
+        "state": "AU",
+        "country": "Australia",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://live.rtrfm.com.au/stream1",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://rtrfm.com.au/",
+      "timezone": "Australia/Sydney",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "bolton-fm",
+      "callsign": "BOLTON",
+      "name": "Bolton FM",
+      "location": {
+        "city": "United Kingdom",
+        "state": "GB",
+        "country": "United Kingdom",
+        "lat": 53.57646460080066,
+        "lng": -2.4323666095733647
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://radio.canstream.co.uk:8083/live.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.boltonfm.com/",
+      "timezone": "Europe/London",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "chip-101-7-fort-coulonge-qc",
+      "callsign": "CHIP",
+      "name": "CHIP 101.7 Fort Coulonge, QC",
+      "location": {
+        "city": "Quebec",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream02.ustream.ca/chip128.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.chipfm.com/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "hochschulradio-aachen",
+      "callsign": "HOCHSCHULR",
+      "name": "Hochschulradio Aachen",
+      "location": {
+        "city": "North Rhine-Westphalia",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://evans.hochschulradio.rwth-aachen.de:8000/radio.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.hochschulradio-aachen.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "cfta-107-9-tantramar-fm-amhe",
+      "callsign": "CFTA",
+      "name": "CFTA 107.9 Tantramar FM Amherst, NS",
+      "location": {
+        "city": "Nova Scotia",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://176.31.118.39:14808/;.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://cftafm.com/site/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cfff-92-7-trent-radio-peterb",
+      "callsign": "CFFF",
+      "name": "CFFF 92.7 Trent Radio Peterborough, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://trentradio.ca:8800/hi-fi",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.trentu.ca/org/trentradio/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "nts-radio-2",
+      "callsign": "NTS",
+      "name": "NTS Radio 2",
+      "location": {
+        "city": "London",
+        "state": "GB",
+        "country": "United Kingdom",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream-relay-geo.ntslive.net/stream2",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.nts.live/",
+      "timezone": "Europe/London",
+      "genres": [
+        "community",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wrek-91-1-atlanta-ga",
+      "callsign": "WREK",
+      "name": "WREK 91.1 Atlanta, GA",
+      "location": {
+        "city": "Georgia",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streaming.wrek.org:8000/main/128kb.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.wrek.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "wired-fm-fm-99-9-limerick-ir",
+      "callsign": "WIRED",
+      "name": "Wired FM - FM 99.9 - Limerick, Ireland",
+      "location": {
+        "city": "Ireland",
+        "state": "IE",
+        "country": "Ireland",
+        "lat": 52.65939275073382,
+        "lng": -8.621520996093752
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://s2.radio.co/sf0986595a/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.wiredfm.ie/",
+      "timezone": "Europe/Dublin",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kosmos-94-1",
+      "callsign": "KOSMOS",
+      "name": "Kosmos 94.1",
+      "location": {
+        "city": "Khomas",
+        "state": "NA",
+        "country": "Namibia",
+        "lat": -22.577369247440284,
+        "lng": 17.07491683540866
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://edge.iono.fm/xice/88_high.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kosmos.com.na/",
+      "timezone": "Africa/Windhoek",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wpsu-hd2-public-radio-mix-st",
+      "callsign": "WPSUHD2",
+      "name": "WPSU-HD2 Public Radio Mix Stream - State College, PA",
+      "location": {
+        "city": "Pennsylvania",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wpsu-ice.streamguys1.com/wpsu2",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://wpsu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "public radio"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radioverkko",
+      "callsign": "RADIOVERKK",
+      "name": "Radioverkko",
+      "location": {
+        "city": "Finland",
+        "state": "FI",
+        "country": "Finland",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://kuuntele.radioverkko.fi:8000/live",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://radioverkko.fi/",
+      "timezone": "Europe/Helsinki",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "kdna-91-9-la-voz-del-campesi",
+      "callsign": "KDNA",
+      "name": "KDNA 91.9 La Voz del Campesino Yakima, WA",
+      "location": {
+        "city": "Washington",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://peridot.streamguys.com:5620/kdna-mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.kdna.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wrfg-89-3fm-atlanta-ga",
+      "callsign": "WRFG",
+      "name": "WRFG 89.3FM Atlanta, GA",
+      "location": {
+        "city": "Georgia",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://s2.radio.co/s2133c4bad/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wrfg.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kdvs-davis",
+      "callsign": "KDVS",
+      "name": "KDVS Davis",
+      "location": {
+        "city": "California",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://archives.kdvs.org/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kdvs.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "wbez-hd2-vocalo-stream-chica",
+      "callsign": "WBEZHD2",
+      "name": "WBEZ-HD2 Vocalo Stream Chicago, IL",
+      "location": {
+        "city": "Illinois",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.vocalo.org/vocalo128",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://vocalo.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "galaxy-107-fm-kawerau",
+      "callsign": "GALAXY",
+      "name": "Galaxy 107 FM Kawerau",
+      "location": {
+        "city": "New Zealand",
+        "state": "NZ",
+        "country": "New Zealand",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://s39.myradiostream.com:14858/;listen.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.galaxyfm.co.nz/",
+      "timezone": "Pacific/Auckland",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "chyz-94-3-universite-laval-q",
+      "callsign": "CHYZ",
+      "name": "CHYZ 94.3 Universite Laval Quebec City, QC",
+      "location": {
+        "city": "Quebec",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://ecoutez.chyz.ca:8000/;",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://chyz.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-casa-pueblo",
+      "callsign": "RADIO",
+      "name": "Radio Casa Pueblo",
+      "location": {
+        "city": "San Juan",
+        "state": "PR",
+        "country": "Puerto Rico",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://s1.voscast.com:9906/;stream1523840050300/1",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://casapueblo.org/",
+      "timezone": "America/Puerto_Rico",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "krcl-90-9-fm-salt-lake-city-",
+      "callsign": "KRCL",
+      "name": "KRCL 90.9 FM Salt Lake City, UT high",
+      "location": {
+        "city": "Utah",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://stream.xmission.com/krcl-high",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.krcl.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "radio-blau",
+      "callsign": "RADIO",
+      "name": "Radio Blau",
+      "location": {
+        "city": "Saxony",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.radioblau.de/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.radioblau.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "kcep-88-1-power-88-las-vegas",
+      "callsign": "KCEP",
+      "name": "KCEP 88.1 Power 88 Las Vegas, NV",
+      "location": {
+        "city": "Nevada",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://ice7.securenetsystems.net/KCEP",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://power88lv.com/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "chha-1610-voces-latinas-toro",
+      "callsign": "CHHA",
+      "name": "CHHA 1610 Voces Latinas Toronto, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://72.139.27.130:100/broadwave.mp3?src=1&rate=1",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://chha1610am.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "ucm-the-beat",
+      "callsign": "UCMTHE",
+      "name": "UCM-The Beat",
+      "location": {
+        "city": "Missouri",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 38.75775033859942,
+        "lng": -93.73997562408012
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://198.245.60.88:8232/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.digitalburg.com/thebeat/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "islands-fm",
+      "callsign": "ISLANDS",
+      "name": "Islands FM",
+      "location": {
+        "city": "Scilly Isles",
+        "state": "GB",
+        "country": "United Kingdom",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://radio.canstream.co.uk:8040/live.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.islandsfm.org/",
+      "timezone": "Europe/London",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "2fbi-fbi-radio-94-5-fm-sydne",
+      "callsign": "2FBI",
+      "name": "2FBI FBi Radio 94.5 FM Sydney, NSW",
+      "location": {
+        "city": "New South Wales",
+        "state": "AU",
+        "country": "Australia",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streamer.fbiradio.com/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://fbiradio.com/",
+      "timezone": "Australia/Sydney",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "cjbb-103-1-the-train-engleha",
+      "callsign": "CJBB",
+      "name": "CJBB 103.1 The Train Englehart, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://ice10.securenetsystems.net/CJBB",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://1031thetrain.com/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "refuge-worldwide",
+      "callsign": "REFUGE",
+      "name": "Refuge Worldwide",
+      "location": {
+        "city": "Berlin",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 52.483421,
+        "lng": 13.441075
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streaming.radio.co/s3699c5e49/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://refugeworldwide.com/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "cbfm-ca-gaelic-college-st-an",
+      "callsign": "CBFMCA",
+      "name": "CBFM.ca Gaelic College St. Ann's, NS",
+      "location": {
+        "city": "Nova Scotia",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 46.21510798081751,
+        "lng": -60.60556411743165
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://s4.radio.co/s6f58ddb4f/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.cbfm.ca/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "ckwr-98-5-real-community-rad",
+      "callsign": "CKWR",
+      "name": "CKWR 98.5 Real Community Radio Kitchener, ON",
+      "location": {
+        "city": "Ontario",
+        "state": "CA",
+        "country": "Canada",
+        "lat": 43.439699604917536,
+        "lng": -80.46532630920412
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream2.statsradio.com:8150/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://ckwr.com/",
+      "timezone": "America/Toronto",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "foundation-fm",
+      "callsign": "FOUNDATION",
+      "name": "Foundation FM",
+      "location": {
+        "city": "London",
+        "state": "GB",
+        "country": "United Kingdom",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streamer.radio.co/s0628bdd53/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://foundation.fm/",
+      "timezone": "Europe/London",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "3cr",
+      "callsign": "3CR",
+      "name": "3CR",
+      "location": {
+        "city": "Australia",
+        "state": "AU",
+        "country": "Australia",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3CR.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.3cr.org.au/",
+      "timezone": "Australia/Sydney",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wuot-91-9-fm-knoxville-tn",
+      "callsign": "WUOT",
+      "name": "WUOT 91.9 FM Knoxville, TN",
+      "location": {
+        "city": "Tennessee",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://26223.live.streamtheworld.com/WUOTFM_SC",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://www.wuot.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wpsu-91-5-penn-state-univers",
+      "callsign": "WPSU",
+      "name": "WPSU 91.5 Penn State University State College, PA",
+      "location": {
+        "city": "Pennsylvania",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wpsu-ice.streamguys1.com/wpsu1",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://wpsu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "kunm-89-9-new-mexico-public-",
+      "callsign": "KUNM",
+      "name": "KUNM 89.9 New Mexico Public Radio Albuquerque, NM",
+      "location": {
+        "city": "New Mexico",
+        "state": "US",
+        "country": "The United States Of America",
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://23023.live.streamtheworld.com:3690/KUNMFM_128_SC",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "http://kunm.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
     }
   ]
 }
