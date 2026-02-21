@@ -30,8 +30,14 @@ class StationRegistry:
     def list_stations(self) -> list[dict[str, Any]]:
         return list(self._stations_by_id.values())
 
+    def list_healthy_stations(self) -> list[dict[str, Any]]:
+        return [station for station in self._stations_by_id.values() if station.get("health_status") != "bad"]
+
     def get_station(self, station_id: str) -> dict[str, Any] | None:
         return self._stations_by_id.get(station_id)
+
+    def is_known_station(self, station_id: str) -> bool:
+        return station_id in self._stations_by_id
 
     def list_genres(self) -> list[str]:
         genres: set[str] = set()

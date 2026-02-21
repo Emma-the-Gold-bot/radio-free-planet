@@ -1,0 +1,434 @@
+{
+  "version": "0.2.0",
+  "generated_at": "2026-02-21T22:09:48.405057+00:00",
+  "stations_checked": 56,
+  "failed_stations": 0,
+  "rows": [
+    {
+      "station_id": "kexp",
+      "source_tier": "tier1_api",
+      "confidence": 0.95,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cjsw",
+      "source_tier": "tier2_html",
+      "confidence": 0.7,
+      "success": true,
+      "errors": [
+        "monday:duplicate_slot:Indie Pop/Rock Electronic R&B/Soul, Hip-Hop/Rap, Reggae Spoken Word Multicultural, Psychedelic/Garage Folk, Country & We:03:00-05:30",
+        "monday:duplicate_slot:Sunday Monday Tuesday Wednesday Thursday Friday Saturday 5:30am CJSW Presents hosted by Various Vocal Cords hosted by Me:03:00-05:30",
+        "monday:duplicate_slot:Sunday Monday Tuesday Wednesday Thursday Friday Saturday 5:30am CJSW Presents hosted by Various Vocal Cords hosted by Me:03:00-05:30",
+        "saturday:duplicate_slot:Now Playing Acheulean Age Country & Western , Folk Saturday  Listen Live Coming Up Level The Vibes Multicultural , Regga:14:00-16:00",
+        "saturday:duplicate_slot:Now Playing Acheulean Age Country & Western , Folk Saturday  Listen Live:14:00-16:00",
+        "saturday:duplicate_slot:Acheulean Age Country & Western , Folk Saturday  Listen Live:14:00-16:00",
+        "saturday:duplicate_slot:Acheulean Age Country & Western , Folk Saturday  Listen Live:14:00-16:00",
+        "sunday:duplicate_slot:12AM Play Show Megawatt Mayhem Metal Crushing posers since 1986, Megawatt Mayhem stands as one of the world\u2019s longest ru:10:00-11:00",
+        "sunday:duplicate_slot:12AM Play Show Megawatt Mayhem Metal Crushing posers since 1986, Megawatt Mayhem stands as one of the world\u2019s longest ru:10:00-11:00"
+      ]
+    },
+    {
+      "station_id": "wmse",
+      "source_tier": "tier2_html",
+      "confidence": 0.7,
+      "success": true,
+      "errors": [
+        "wednesday:duplicate_slot:Wednesdays:06:00-09:00",
+        "friday:duplicate_slot:Fridays:18:00-21:00",
+        "saturday:duplicate_slot:Saturdays:15:00-17:00"
+      ]
+    },
+    {
+      "station_id": "npr",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.85,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "fip",
+      "source_tier": "tier1_api",
+      "confidence": 0.8,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "dublab",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.7,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "somafm-groove",
+      "source_tier": "tier1_api",
+      "confidence": 0.85,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "somafm-drone",
+      "source_tier": "tier1_api",
+      "confidence": 0.85,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "radioparadise",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.8,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "nts-1",
+      "source_tier": "tier1_api",
+      "confidence": 0.9,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cashmere",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.6,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kzfr",
+      "source_tier": "tier2_html",
+      "confidence": 0.0,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "hirschmilch",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.75,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "klnd-89-5-little-eagle-sd",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "chry-vibe-105-5-york-univers",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "knct-simply-beautiful-copper",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "krbx-89-9-93-5-radio-boise-b",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "wftu-1570-five-towns-college",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "nts-radio-1",
+      "source_tier": "tier1_api",
+      "confidence": 0.9,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cfwn-northumberland-89-7-cob",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "uam-radio-ciudad-de-m-xico-9",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cfnj-99-1-saint-gabriel-de-b",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "ches-91-7-erin-radio-on",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "allegheny-mountain-radio",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kpcr-101-9-pirate-cat-radio",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cisf-107-7-pulse-fm-surrey-b",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cfuv-101-9-university-of-vic",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "radio-buap-puebla-96-9-fm-xh",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "camfm-cambridge-university-s",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "radio-k-real-college-radio-k",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "fraser-coast-fm-hervey-bay-1",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "waps-91-3-the-summit-akron-o",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "pinguino-estereo",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "rtrfm",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "bolton-fm",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.55,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cfta-107-9-tantramar-fm-amhe",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "nts-radio-2",
+      "source_tier": "tier1_api",
+      "confidence": 0.9,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "wired-fm-fm-99-9-limerick-ir",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kosmos-94-1",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.55,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "wpsu-hd2-public-radio-mix-st",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kdna-91-9-la-voz-del-campesi",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "wrfg-89-3fm-atlanta-ga",
+      "source_tier": "tier2_html",
+      "confidence": 0.7,
+      "success": true,
+      "errors": [
+        "monday:duplicate_slot:Night Watch Monday night/Tuesday morning Temp Host: Maleek:00:00-03:00",
+        "monday:duplicate_slot:Rebroadcast of Public Affairs Programming  Monday through Tuesday:03:00-06:00",
+        "monday:duplicate_slot:Rebroadcast of Public Affairs Programming  Monday through Tuesday:03:00-06:00",
+        "monday:duplicate_slot:Time Mon/Tues Tues/Wed Wed/Thu Thu/Fri Fri/Sat Sat/Sun Sun/Mon 6 AM Good Morning Blues 1: Different Hues of the Blues wi:06:00-08:00",
+        "monday:duplicate_slot:Hard Knock Radio with Davey D and Anita Johnson\n(KPFK Berkley)  Monday through Friday:13:00-14:00",
+        "monday:duplicate_slot:Democracy Now with Amy Goodman, Juan Gonzalez, & Nermeen Shaikh (National Syndication)  Monday through Friday:17:00-18:00",
+        "tuesday:duplicate_slot:Soul Rhapsody alternating programs: The Love Frequency with Queen Jeannine Good Foot Tuesday with Rodney Gibbs:10:00-12:00",
+        "tuesday:duplicate_slot:Jazz Forum Tuesday with Muggy:22:00-00:00",
+        "wednesday:duplicate_slot:Rebroadcast of Public Affairs Programming  Wednesday through Friday:03:00-06:00",
+        "wednesday:duplicate_slot:Rebroadcast of Public Affairs Programming  Wednesday through Friday:03:00-06:00",
+        "wednesday:duplicate_slot:Public Affairs What Happens Now? with Shanae - 1st, 3rd, & 5th Wed. New Roots Radio with Quameiha - 4th Wed.:19:00-20:00",
+        "thursday:duplicate_slot:Night Watch Thursday Ambient with Elijah:00:00-03:00",
+        "thursday:duplicate_slot:Jazz Forum Thursday with Michael Ivey:22:00-00:00",
+        "friday:duplicate_slot:Good Morning Blues 2: It's Friday with Abdul:08:00-10:00",
+        "friday:duplicate_slot:African Experience Worldwide with DJ ARC and Mfon:11:00-14:00",
+        "friday:duplicate_slot:Public Affairs: What Good Is A Song/The Friday Night Drum with Kwame Uhuru and Kweku Lumumba:18:00-19:30",
+        "friday:duplicate_slot:Public Affairs: RAP - Revolutionary African Perspectives with Dartricia, Musa, Taylor, Leyla, Abayomi, and Steven:19:00-20:00",
+        "sunday:duplicate_slot:Jazz Forum Sunny's Mood with Evan Matthews:22:00-00:00",
+        "sunday:duplicate_slot:Sunday Night Fiyah with Lady Valentine:22:00-00:00"
+      ]
+    },
+    {
+      "station_id": "wbez-hd2-vocalo-stream-chica",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.6,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "galaxy-107-fm-kawerau",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "chyz-94-3-universite-laval-q",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kcep-88-1-power-88-las-vegas",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.6,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "ucm-the-beat",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "islands-fm",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cjbb-103-1-the-train-engleha",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "refuge-worldwide",
+      "source_tier": "tier2_enriched",
+      "confidence": 0.65,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "cbfm-ca-gaelic-college-st-an",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "ckwr-98-5-real-community-rad",
+      "source_tier": "tier3_seed",
+      "confidence": 0.5,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "foundation-fm",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "3cr",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "wuot-91-9-fm-knoxville-tn",
+      "source_tier": "tier2_html",
+      "confidence": 0.2,
+      "success": true,
+      "errors": []
+    },
+    {
+      "station_id": "kunm-89-9-new-mexico-public-",
+      "source_tier": "tier2_html",
+      "confidence": 0.0,
+      "success": true,
+      "errors": []
+    }
+  ]
+}

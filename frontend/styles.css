@@ -55,6 +55,13 @@ body {
     margin-top: 0.25rem;
 }
 
+.browse-note {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+}
+
 /* Navigation */
 .tab-nav {
     display: flex;
@@ -131,6 +138,32 @@ body {
 }
 
 .search-box input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.station-filter-box {
+    margin-top: 0.75rem;
+}
+
+.station-filter-box label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.375rem;
+}
+
+.station-filter-box select {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.station-filter-box select:focus {
     outline: none;
     border-color: var(--accent);
 }
@@ -224,6 +257,23 @@ body {
 .show-info {
     padding: 0.5rem 0;
     border-top: 1px solid var(--border);
+}
+
+.station-links {
+    margin-top: 0.65rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid var(--border);
+}
+
+.station-site-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.station-site-link:hover {
+    text-decoration: underline;
 }
 
 .show-title {

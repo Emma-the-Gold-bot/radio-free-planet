@@ -14,42 +14,23 @@
         <!-- Header -->
         <header class="app-header">
             <h1>📻 Radio Agnostic</h1>
-            <p class="tagline">Find what's playing. Build your schedule.</p>
+            <p class="tagline">Browse stations and build your schedule.</p>
         </header>
 
         <!-- Navigation -->
         <nav class="tab-nav">
-            <button class="tab-btn active" data-tab="discover">
-                <span class="icon">🔍</span>
-                <span class="label">Discover</span>
+            <button class="tab-btn active" data-tab="browse">
+                <span class="icon">📍</span>
+                <span class="label">Browse</span>
             </button>
             <button class="tab-btn" data-tab="schedule">
                 <span class="icon">📅</span>
                 <span class="label">Schedule</span>
             </button>
-            <button class="tab-btn" data-tab="browse">
-                <span class="icon">📍</span>
-                <span class="label">Browse</span>
-            </button>
         </nav>
 
         <!-- Main Content -->
         <main class="content">
-            <!-- Discover Tab -->
-            <section id="discover-tab" class="tab-content active">
-                <div class="filters">
-                    <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Search stations or shows...">
-                    </div>
-                    <div class="genre-filters" id="genre-filters">
-                        <!-- Genre pills populated by JS -->
-                    </div>
-                </div>
-                <div class="now-playing-feed" id="now-playing-feed">
-                    <div class="loading">Loading stations...</div>
-                </div>
-            </section>
-
             <!-- Schedule Tab -->
             <section id="schedule-tab" class="tab-content">
                 <div class="schedule-header">
@@ -64,9 +45,15 @@
             </section>
 
             <!-- Browse Tab -->
-            <section id="browse-tab" class="tab-content">
+            <section id="browse-tab" class="tab-content active">
                 <div class="browse-header">
                     <h2>Stations</h2>
+                </div>
+                <p class="browse-note">For up-to-date programming, check each station site. If you like what you hear, consider donating directly to the station.</p>
+                <div class="filters">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search stations by name, callsign, or city...">
+                    </div>
                 </div>
                 <div class="stations-grid" id="stations-grid">
                     <!-- Stations populated by JS -->

@@ -44,6 +44,30 @@ Make shortcut:
 
 - `make validate-streams`
 
+## Schedule Pipeline
+
+The schedule/now-playing pipeline is tiered and runs from healthy stations only:
+
+- Tier 1: structured API/RSS adapters
+- Tier 2: HTML extraction adapters
+- Tier 3: manual seed rules (fallback)
+
+Run one refresh:
+
+- `make refresh-schedules`
+
+Dry-run without writes:
+
+- `make refresh-schedules-dry`
+
+Run continuous worker (5-minute refresh):
+
+- `make run-schedule-worker`
+
+Backfill coverage check (hourly slices):
+
+- `cd backend && source venv/bin/activate && python schedule_refresh.py --backfill-hours 24`
+
 ## Data Model Notes
 
 Each station is normalized with:

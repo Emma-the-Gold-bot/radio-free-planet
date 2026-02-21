@@ -16,14 +16,11 @@ const PHP_PROXY_BASE = window.RADIO_AGNOSTIC_PHP_PROXY || "/proxy.php?url=";
 
 let state = {
     stations: [],
-    genres: [],
-    nowPlaying: [],
     schedules: JSON.parse(localStorage.getItem("radio_agnostic_schedules") || "[]"),
     currentStation: null,
     isPlaying: false,
     isLoading: false,
-    activeGenre: null,
-    activeTab: "discover",
+    activeTab: "browse",
     playbackPlan: [],
     playbackPlanIndex: -1,
 };
@@ -31,9 +28,7 @@ let state = {
 const elements = {
     tabs: document.querySelectorAll(".tab-btn"),
     tabContents: document.querySelectorAll(".tab-content"),
-    nowPlayingFeed: document.getElementById("now-playing-feed"),
     stationsGrid: document.getElementById("stations-grid"),
-    genreFilters: document.getElementById("genre-filters"),
     searchInput: document.getElementById("search-input"),
     playerBar: document.getElementById("player-bar"),
     playerStation: document.getElementById("player-station"),
@@ -69,51 +64,6 @@ async function fetchStations() {
     }
 }
 
-async function fetchGenres() {
-    try {
-        return await apiGet("/genres");
-    } catch (error) {
-        console.error("Error fetching genres:", error);
-        return [];
-    }
-}
-
-async function fetchNowPlaying(genre = null) {
-    try {
-        let url = "/now-playing";
-        if (genre) url += `?genre=${encodeURIComponent(genre)}`;
-        return await apiGet(url);
-    } catch (error) {
-        console.error("Error fetching now playing:", error);
-        return [];
-    }
-}
-
-function renderGenreFilters() {
-    elements.genreFilters.innerHTML = `
-        <button class="genre-pill ${!state.activeGenre ? "active" : ""}" data-genre="">
-            All
-        </button>
-        ${state.genres
-            .map(
-                (genre) => `
-            <button class="genre-pill ${state.activeGenre === genre ? "active" : ""}" data-genre="${genre}">
-                ${genre.charAt(0).toUpperCase() + genre.slice(1)}
-            </button>
-        `
-            )
-            .join("")}
-    `;
-
-    elements.genreFilters.querySelectorAll(".genre-pill").forEach((pill) => {
-        pill.addEventListener("click", () => {
-            state.activeGenre = pill.dataset.genre || null;
-            renderGenreFilters();
-            loadNowPlaying();
-        });
-    });
-}
-
 function renderStationCard(station, show = null) {
     const isCurrentStation = state.currentStation?.id === station.id;
     const isPlaying = isCurrentStation && state.isPlaying;
@@ -145,6 +95,16 @@ function renderStationCard(station, show = null) {
         `;
     }
 
+    const stationWebsiteHTML = station.website
+        ? `
+            <div class="station-links">
+                <a class="station-site-link" href="${station.website}" target="_blank" rel="noopener noreferrer">
+                    Visit station website
+                </a>
+            </div>
+        `
+        : "";
+
     return `
         <div class="station-card ${isPlaying ? "playing" : ""} ${isLoading ? "loading" : ""}" data-station-id="${station.id}">
             <div class="station-header">
@@ -158,23 +118,17 @@ function renderStationCard(station, show = null) {
                 </button>
             </div>
             ${showInfoHTML}
+            ${stationWebsiteHTML}
         </div>
     `;
 }
 
-function renderNowPlaying() {
-    if (state.nowPlaying.length === 0) {
-        elements.nowPlayingFeed.innerHTML = `
-            <div class="empty-state">
-                <p>No stations currently playing${state.activeGenre ? ` ${state.activeGenre}` : ""}.</p>
-            </div>
-        `;
-        return;
-    }
+function renderStationsGrid() {
+    const healthyStations = state.stations.filter((station) => station.health_status !== "bad");
+    const sortedStations = healthyStations.sort((a, b) => a.name.localeCompare(b.name));
+    elements.stationsGrid.innerHTML = sortedStations.map((station) => renderStationCard(station)).join("");
 
-    elements.nowPlayingFeed.innerHTML = state.nowPlaying.map((item) => renderStationCard(item.station, item.show)).join("");
-
-    elements.nowPlayingFeed.querySelectorAll(".station-card").forEach((card) => {
+    elements.stationsGrid.querySelectorAll(".station-card").forEach((card) => {
         card.addEventListener("click", () => {
             const stationId = card.dataset.stationId;
             const station = state.stations.find((s) => s.id === stationId);
@@ -182,7 +136,7 @@ function renderNowPlaying() {
         });
     });
 
-    elements.nowPlayingFeed.querySelectorAll(".play-btn").forEach((btn) => {
+    elements.stationsGrid.querySelectorAll(".play-btn").forEach((btn) => {
         btn.addEventListener("click", (e) => {
             e.stopPropagation();
             const stationId = btn.dataset.stationId;
@@ -191,26 +145,9 @@ function renderNowPlaying() {
         });
     });
 
-    elements.nowPlayingFeed.querySelectorAll(".schedule-add-btn").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
+    elements.stationsGrid.querySelectorAll(".station-site-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
             e.stopPropagation();
-            const stationId = btn.dataset.stationId;
-            const showName = btn.dataset.showName;
-            if (typeof openAddToScheduleModal === "function") {
-                openAddToScheduleModal(stationId, showName);
-            }
-        });
-    });
-}
-
-function renderStationsGrid() {
-    elements.stationsGrid.innerHTML = state.stations.map((station) => renderStationCard(station)).join("");
-
-    elements.stationsGrid.querySelectorAll(".station-card").forEach((card) => {
-        card.addEventListener("click", () => {
-            const stationId = card.dataset.stationId;
-            const station = state.stations.find((s) => s.id === stationId);
-            if (station) playStation(station);
         });
     });
 }
@@ -381,7 +318,7 @@ async function playStation(station) {
             state.isPlaying = true;
             state.isLoading = false;
             updatePlayerUI();
-            renderNowPlaying();
+            renderStationsGrid();
             updateMediaSession(station);
             return;
         } catch (error) {
@@ -418,7 +355,7 @@ function togglePlay(station) {
     }
 
     updatePlayerUI();
-    renderNowPlaying();
+    renderStationsGrid();
 }
 
 function updatePlayerUI() {
@@ -540,7 +477,7 @@ elements.scheduleForm.addEventListener("submit", (e) => {
 
 elements.searchInput.addEventListener("input", (e) => {
     const query = e.target.value.toLowerCase();
-    const cards = elements.nowPlayingFeed.querySelectorAll(".station-card");
+    const cards = elements.stationsGrid.querySelectorAll(".station-card");
     cards.forEach((card) => {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(query) ? "" : "none";
@@ -561,13 +498,13 @@ elements.audioPlayer.addEventListener("playing", () => {
     state.isPlaying = true;
     state.isLoading = false;
     updatePlayerUI();
-    renderNowPlaying();
+    renderStationsGrid();
 });
 
 elements.audioPlayer.addEventListener("pause", () => {
     state.isPlaying = false;
     updatePlayerUI();
-    renderNowPlaying();
+    renderStationsGrid();
 });
 
 elements.audioPlayer.addEventListener("waiting", () => {
@@ -582,22 +519,11 @@ elements.audioPlayer.addEventListener("stalled", () => {
 });
 
 async function init() {
-    const [stations, genres] = await Promise.all([fetchStations(), fetchGenres()]);
+    const stations = await fetchStations();
     state.stations = stations;
-    state.genres = genres;
 
-    renderGenreFilters();
     renderStationsGrid();
     renderSchedules();
-    await loadNowPlaying();
-
-    setInterval(loadNowPlaying, 60000);
-}
-
-async function loadNowPlaying() {
-    const nowPlaying = await fetchNowPlaying(state.activeGenre);
-    state.nowPlaying = nowPlaying;
-    renderNowPlaying();
 }
 
 document.addEventListener("DOMContentLoaded", init);

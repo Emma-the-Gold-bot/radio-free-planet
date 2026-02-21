@@ -1,0 +1,319 @@
+{
+  "version": "0.3.0",
+  "default": {
+    "tier": "tier3_seed",
+    "adapter": "seed"
+  },
+  "stations": {
+    "kexp": {
+      "tier": "tier1_api",
+      "adapter": "kexp_api"
+    },
+    "nts-1": {
+      "tier": "tier1_api",
+      "adapter": "nts_api"
+    },
+    "nts-radio-1": {
+      "tier": "tier1_api",
+      "adapter": "nts_api"
+    },
+    "nts-radio-2": {
+      "tier": "tier1_api",
+      "adapter": "nts_api"
+    },
+    "fip": {
+      "tier": "tier1_api",
+      "adapter": "fip_api"
+    },
+    "somafm-groove": {
+      "tier": "tier1_api",
+      "adapter": "somafm_api"
+    },
+    "somafm-drone": {
+      "tier": "tier1_api",
+      "adapter": "somafm_api"
+    },
+
+    "wfmu-rock-n-soul-radio": {
+      "tier": "tier2_html",
+      "adapter": "wfmu_html"
+    },
+    "cjsw": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://cjsw.com/programming/",
+      "time_format": "12h",
+      "default_genre": "eclectic"
+    },
+    "rtrfm": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://rtrfm.com.au/shows/",
+      "time_format": "12h",
+      "default_genre": "eclectic"
+    },
+    "wmse": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://wmse.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "eclectic"
+    },
+    "3cr": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://www.3cr.org.au/schedule",
+      "time_format": "12h",
+      "default_genre": "community"
+    },
+    "foundation-fm": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://foundation.fm/schedule",
+      "time_format": "12h",
+      "default_genre": "electronic"
+    },
+    "kpfa": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://kpfa.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "talk"
+    },
+    "wrek-91-1-atlanta-ga": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://www.wrek.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "college"
+    },
+    "kzfr": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://kzfr.org/programming",
+      "time_format": "12h",
+      "default_genre": "eclectic"
+    },
+    "kdvs-davis": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://kdvs.org/programming/schedule/",
+      "time_format": "12h",
+      "default_genre": "freeform"
+    },
+    "wrfg-89-3fm-atlanta-ga": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://wrfg.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "community"
+    },
+    "kunm-89-9-new-mexico-public-": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://kunm.org/schedule",
+      "time_format": "12h",
+      "default_genre": "public radio"
+    },
+    "wuot-91-9-fm-knoxville-tn": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://www.wuot.org/schedule",
+      "time_format": "12h",
+      "default_genre": "public radio"
+    },
+    "radio-k-real-college-radio-k": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://radiok.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "college"
+    },
+    "waps-91-3-the-summit-akron-o": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://www.thesummit.fm/schedule/",
+      "time_format": "12h",
+      "default_genre": "community"
+    },
+    "krcl-90-9-fm-salt-lake-city-": {
+      "tier": "tier2_html",
+      "adapter": "html_generic",
+      "schedule_url": "https://www.krcl.org/schedule/",
+      "time_format": "12h",
+      "default_genre": "community"
+    },
+
+    "radioparadise": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Radio Paradise Mix",
+      "host": "Bill & Rebecca Goldsmith",
+      "genre": "eclectic",
+      "description": "Eclectic listener-supported internet radio — rock, world, electronic, jazz",
+      "confidence": 0.80
+    },
+    "dublab": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "dublab",
+      "host": "dublab DJs",
+      "genre": "electronic",
+      "description": "Future roots radio — electronic, experimental, beats",
+      "confidence": 0.70
+    },
+    "hirschmilch": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Hirschmilch Radio",
+      "host": "Hirschmilch",
+      "genre": "techno",
+      "description": "Techno, electronic, progressive from Germany",
+      "confidence": 0.75
+    },
+    "frisky": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "FRISKY Radio",
+      "host": "FRISKY",
+      "genre": "house",
+      "description": "Deep house, techno, progressive electronic music",
+      "confidence": 0.75
+    },
+    "kiss-2020s": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "KISS 2020s",
+      "host": "KISS FM",
+      "genre": "pop",
+      "description": "Pop, charts, 2020s hits",
+      "confidence": 0.80
+    },
+    "worldwide": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Worldwide FM",
+      "host": "Gilles Peterson & friends",
+      "genre": "world",
+      "description": "Global sounds, soul, jazz — curated by Gilles Peterson",
+      "confidence": 0.70
+    },
+    "kiosk": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Kiosk Radio",
+      "host": "Kiosk Radio DJs",
+      "genre": "electronic",
+      "description": "Live DJ sets from Brussels — house, techno, eclectic",
+      "confidence": 0.65
+    },
+    "thelot": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "The Lot Radio",
+      "host": "The Lot Radio DJs",
+      "genre": "house",
+      "description": "Live broadcast from Greenpoint, Brooklyn — house, disco, techno",
+      "confidence": 0.65
+    },
+    "cashmere": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Cashmere Radio",
+      "host": "Cashmere Radio",
+      "genre": "experimental",
+      "description": "Experimental community radio from Berlin",
+      "confidence": 0.60
+    },
+    "lemellotron": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Le Mellotron",
+      "host": "Le Mellotron DJs",
+      "genre": "soul",
+      "description": "Soul, jazz, global sounds from Paris",
+      "confidence": 0.65
+    },
+    "soho": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Soho Radio",
+      "host": "Soho Radio",
+      "genre": "eclectic",
+      "description": "Eclectic underground radio from London's Soho",
+      "confidence": 0.60
+    },
+    "subcity": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Subcity Radio",
+      "host": "Subcity",
+      "genre": "electronic",
+      "description": "Student radio from Glasgow — bass, electronic",
+      "confidence": 0.60
+    },
+    "threads": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Threads Radio",
+      "host": "Threads",
+      "genre": "electronic",
+      "description": "Bass, grime, techno from London",
+      "confidence": 0.60
+    },
+    "refuge-worldwide": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Refuge Worldwide",
+      "host": "Refuge Worldwide",
+      "genre": "electronic",
+      "description": "Community radio from Berlin Neukölln — electronic, house, experimental",
+      "confidence": 0.65
+    },
+    "npr": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "NPR Program Stream",
+      "host": "NPR",
+      "genre": "talk",
+      "description": "National Public Radio — news, talk, culture",
+      "confidence": 0.85
+    },
+    "kosmos-94-1": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Kosmos 94.1",
+      "host": "Kosmos",
+      "genre": "eclectic",
+      "description": "Community radio from Namibia",
+      "confidence": 0.55
+    },
+    "wbez-hd2-vocalo-stream-chica": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Vocalo",
+      "host": "WBEZ / Vocalo",
+      "genre": "eclectic",
+      "description": "Chicago community radio — eclectic, local culture",
+      "confidence": 0.60
+    },
+    "bolton-fm": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Bolton FM",
+      "host": "Bolton FM",
+      "genre": "community",
+      "description": "Community radio from Bolton, UK",
+      "confidence": 0.55
+    },
+    "kcep-88-1-power-88-las-vegas": {
+      "tier": "tier2_enriched",
+      "adapter": "continuous",
+      "program_title": "Power 88",
+      "host": "KCEP",
+      "genre": "hip-hop",
+      "description": "Hip-hop, R&B, soul — community radio Las Vegas",
+      "confidence": 0.60
+    }
+  }
+}
