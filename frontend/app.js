@@ -25,6 +25,14 @@ let state = {
     playbackPlanIndex: -1,
 };
 
+const mapState = {
+    instance: null,
+    markerLayer: null,
+    markersById: new Map(),
+    query: "",
+    visibleStations: [],
+};
+
 const elements = {
     tabs: document.querySelectorAll(".tab-btn"),
     tabContents: document.querySelectorAll(".tab-content"),
@@ -42,6 +50,10 @@ const elements = {
     scheduleModal: document.getElementById("schedule-modal"),
     scheduleForm: document.getElementById("schedule-form"),
     closeModalBtns: document.querySelectorAll(".close-modal, .close-btn"),
+    mapSearchInput: document.getElementById("map-search-input"),
+    mapContainer: document.getElementById("stations-map"),
+    mapStatus: document.getElementById("map-status"),
+    mapStationsList: document.getElementById("map-stations-list"),
 };
 
 async function apiGet(path) {
@@ -150,6 +162,208 @@ function renderStationsGrid() {
             e.stopPropagation();
         });
     });
+}
+
+function escapeHtml(text) {
+    return (text || "").replace(/[&<>"']/g, (char) => {
+        const entities = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+        return entities[char] || char;
+    });
+}
+
+function stationHasCoordinates(station) {
+    const lat = station?.location?.lat;
+    const lng = station?.location?.lng;
+    return Number.isFinite(lat) && Number.isFinite(lng);
+}
+
+function getMapEligibleStations() {
+    return state.stations.filter((station) => station.health_status !== "bad" && stationHasCoordinates(station));
+}
+
+function stationMatchesQuery(station, query) {
+    if (!query) return true;
+    const haystack = [
+        station.name,
+        station.callsign,
+        station.location?.city,
+        station.location?.state,
+        station.location?.country,
+    ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+    return haystack.includes(query);
+}
+
+function formatStationLocation(station) {
+    const city = station?.location?.city || "Unknown city";
+    const region = station?.location?.country || station?.location?.state || "";
+    return region ? `${city}, ${region}` : city;
+}
+
+function normalizeWebsiteUrl(url) {
+    if (!url || typeof url !== "string") return "";
+    const trimmed = url.trim();
+    if (!trimmed) return "";
+    if (/^https?:\/\//i.test(trimmed)) return trimmed;
+    return "";
+}
+
+function setMapStatus(message = "") {
+    if (!elements.mapStatus) return;
+    if (!message) {
+        elements.mapStatus.classList.add("hidden");
+        elements.mapStatus.textContent = "";
+        return;
+    }
+    elements.mapStatus.classList.remove("hidden");
+    elements.mapStatus.textContent = message;
+}
+
+function focusStationOnMap(stationId) {
+    const marker = mapState.markersById.get(stationId);
+    if (!marker || !mapState.instance) return;
+    mapState.instance.flyTo(marker.getLatLng(), Math.max(mapState.instance.getZoom(), 5), { duration: 0.45 });
+    marker.openPopup();
+}
+
+function renderMapStationsList(stations) {
+    if (!elements.mapStationsList) return;
+
+    if (!stations.length) {
+        elements.mapStationsList.innerHTML = `
+            <div class="empty-state">
+                <p>No stations match this map filter.</p>
+            </div>
+        `;
+        return;
+    }
+
+    elements.mapStationsList.innerHTML = stations
+        .map(
+            (station) => `
+            <div class="station-card map-station-card" data-station-id="${station.id}">
+                <div class="station-header">
+                    <div class="station-logo">📻</div>
+                    <div class="station-info">
+                        <h3>${escapeHtml(station.name)}</h3>
+                        <div class="location">${escapeHtml(formatStationLocation(station))}</div>
+                    </div>
+                    <button class="play-btn" data-map-play-station-id="${station.id}">▶️</button>
+                </div>
+            </div>
+        `
+        )
+        .join("");
+
+    elements.mapStationsList.querySelectorAll(".map-station-card").forEach((card) => {
+        card.addEventListener("click", () => {
+            focusStationOnMap(card.dataset.stationId);
+        });
+    });
+
+    elements.mapStationsList.querySelectorAll("[data-map-play-station-id]").forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const stationId = btn.dataset.mapPlayStationId;
+            const station = state.stations.find((item) => item.id === stationId);
+            if (station) {
+                playStation(station);
+            }
+        });
+    });
+}
+
+function initMapIfNeeded() {
+    if (mapState.instance || !elements.mapContainer) return true;
+    if (typeof window.L === "undefined") {
+        setMapStatus("Map library failed to load. Try refreshing the page.");
+        return false;
+    }
+
+    mapState.instance = window.L.map(elements.mapContainer, {
+        center: [18, 0],
+        zoom: 2,
+        minZoom: 2,
+    });
+
+    window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(mapState.instance);
+
+    mapState.markerLayer = window.L.layerGroup().addTo(mapState.instance);
+    return true;
+}
+
+function renderMapStations() {
+    if (!initMapIfNeeded()) return;
+
+    const eligible = getMapEligibleStations();
+    const query = mapState.query.trim().toLowerCase();
+    const visible = eligible
+        .filter((station) => stationMatchesQuery(station, query))
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+    mapState.visibleStations = visible;
+    mapState.markersById.clear();
+    mapState.markerLayer.clearLayers();
+
+    visible.forEach((station) => {
+        const marker = window.L.marker([station.location.lat, station.location.lng], {
+            title: station.name,
+        });
+        const safeWebsite = normalizeWebsiteUrl(station.website);
+        const websiteHtml = safeWebsite
+            ? `<a class="map-popup-site-link" href="${escapeHtml(safeWebsite)}" target="_blank" rel="noopener noreferrer">Visit station website</a>`
+            : "";
+
+        marker.bindPopup(`
+            <div class="map-popup">
+                <strong>${escapeHtml(station.name)}</strong>
+                <div>${escapeHtml(formatStationLocation(station))}</div>
+                <div class="map-popup-actions">
+                    <button class="map-popup-play-btn" data-map-popup-play-id="${station.id}">▶️ Play</button>
+                    ${websiteHtml}
+                </div>
+            </div>
+        `);
+        marker.on("popupopen", () => {
+            const popupElement = marker.getPopup()?.getElement();
+            if (!popupElement) return;
+
+            const playBtn = popupElement.querySelector("[data-map-popup-play-id]");
+            playBtn?.addEventListener("click", (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                playStation(station);
+            });
+        });
+
+        marker.addTo(mapState.markerLayer);
+        mapState.markersById.set(station.id, marker);
+    });
+
+    if (visible.length === 1) {
+        const only = visible[0];
+        mapState.instance.setView([only.location.lat, only.location.lng], 6);
+    } else if (visible.length > 1) {
+        const bounds = window.L.latLngBounds(visible.map((station) => [station.location.lat, station.location.lng]));
+        if (bounds.isValid()) {
+            mapState.instance.fitBounds(bounds, { padding: [24, 24], maxZoom: 6 });
+        }
+    }
+
+    if (!visible.length) {
+        setMapStatus("No stations with map coordinates match your filter.");
+    } else if (visible.length !== eligible.length) {
+        setMapStatus(`Showing ${visible.length} of ${eligible.length} mapped stations.`);
+    } else {
+        setMapStatus(`Showing ${eligible.length} stations with map data.`);
+    }
+
+    renderMapStationsList(visible);
 }
 
 function renderSchedules() {
@@ -442,6 +656,13 @@ elements.tabs.forEach((tab) => {
 
         elements.tabContents.forEach((content) => content.classList.remove("active"));
         document.getElementById(`${tabName}-tab`).classList.add("active");
+
+        if (tabName === "map") {
+            renderMapStations();
+            setTimeout(() => {
+                mapState.instance?.invalidateSize();
+            }, 80);
+        }
     });
 });
 
@@ -484,6 +705,11 @@ elements.searchInput.addEventListener("input", (e) => {
     });
 });
 
+elements.mapSearchInput?.addEventListener("input", (e) => {
+    mapState.query = e.target.value || "";
+    renderMapStations();
+});
+
 elements.audioPlayer.addEventListener("loadstart", () => {
     state.isLoading = true;
     updatePlayerUI();
@@ -524,6 +750,9 @@ async function init() {
 
     renderStationsGrid();
     renderSchedules();
+    if (state.activeTab === "map") {
+        renderMapStations();
+    }
 }
 
 document.addEventListener("DOMContentLoaded", init);

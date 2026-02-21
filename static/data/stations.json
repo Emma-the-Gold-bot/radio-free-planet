@@ -2353,8 +2353,8 @@
         "city": "Tennessee",
         "state": "US",
         "country": "The United States Of America",
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 35.9606,
+        "lng": -83.9207
       },
       "streams": [
         {

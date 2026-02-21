@@ -6,6 +6,7 @@
     <title>Radio Agnostic</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scheduler.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1a1a2e">
 </head>
@@ -22,6 +23,10 @@
             <button class="tab-btn active" data-tab="browse">
                 <span class="icon">📍</span>
                 <span class="label">Browse</span>
+            </button>
+            <button class="tab-btn" data-tab="map">
+                <span class="icon">🗺️</span>
+                <span class="label">Map</span>
             </button>
             <button class="tab-btn" data-tab="schedule">
                 <span class="icon">📅</span>
@@ -58,6 +63,22 @@
                 <div class="stations-grid" id="stations-grid">
                     <!-- Stations populated by JS -->
                 </div>
+            </section>
+
+            <!-- Map Tab -->
+            <section id="map-tab" class="tab-content">
+                <div class="browse-header">
+                    <h2>Discover by Location</h2>
+                </div>
+                <p class="browse-note">Explore stations on the map, then tap one to start listening.</p>
+                <div class="filters">
+                    <div class="search-box">
+                        <input type="text" id="map-search-input" placeholder="Filter map stations by name, callsign, city, or country...">
+                    </div>
+                </div>
+                <div id="map-status" class="map-status hidden"></div>
+                <div id="stations-map" class="stations-map"></div>
+                <div id="map-stations-list" class="map-stations-list"></div>
             </section>
         </main>
 
@@ -107,5 +128,6 @@
 
     <script src="app.js"></script>
     <script src="scheduler.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 </body>
 </html>
