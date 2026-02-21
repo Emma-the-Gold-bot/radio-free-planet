@@ -1,0 +1,21 @@
+[build]
+  publish = "static"
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
+
+[[redirects]]
+  from = "/proxy/*"
+  to = "/.netlify/functions/proxy/:splat"
+  status = 200
+
+[dev]
+  command = "npm start"
+  targetPort = 3000
+  publish = "static"
+  autoLaunch = true

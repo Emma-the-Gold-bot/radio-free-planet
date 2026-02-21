@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-02-18T09:35:44.205703",
+  "count": 15,
+  "now_playing": [
+    {
+      "station_id": "kexp",
+      "station_name": "KEXP 90.3 FM",
+      "show_title": "The Morning Show",
+      "host": "John Richards",
+      "genre": "rock",
+      "start_time": "07:00",
+      "end_time": "10:00",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "station_id": "kalx",
+      "station_name": "KALX 90.7 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "station_id": "cjsw",
+      "station_name": "CJSW 90.9 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Edmonton"
+    },
+    {
+      "station_id": "wmse",
+      "station_name": "WMSE 91.7 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Chicago"
+    },
+    {
+      "station_id": "wcbn",
+      "station_name": "WCBN 88.3 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Detroit"
+    },
+    {
+      "station_id": "wrfl",
+      "station_name": "WRFL 88.1 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "npr",
+      "station_name": "NPR Program Stream",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "wnyc",
+      "station_name": "WNYC 93.9 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "wqxr",
+      "station_name": "WQXR 105.9 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "wqxr-newsounds",
+      "station_name": "WQXR New Sounds",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "wqxr-operavore",
+      "station_name": "WQXR Operavore",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    },
+    {
+      "station_id": "kut",
+      "station_name": "KUT 90.5 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Chicago"
+    },
+    {
+      "station_id": "kutx",
+      "station_name": "KUTX 98.9 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Chicago"
+    },
+    {
+      "station_id": "kzsu",
+      "station_name": "KZSU 90.1 FM",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "station_id": "wfmu-ichiban",
+      "station_name": "WFMU Ichiban",
+      "show_title": "Live Programming",
+      "host": "Various DJs",
+      "genre": "various",
+      "start_time": "00:00",
+      "end_time": "23:59",
+      "timezone": "America/New_York"
+    }
+  ]
+}
