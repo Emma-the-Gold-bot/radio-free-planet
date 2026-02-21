@@ -1,5 +1,5 @@
 /**
- * Radio Agnostic frontend app.
+ * Radio Free Planet frontend app.
  * Canonical runtime served from /frontend by the FastAPI backend.
  */
 
@@ -38,12 +38,15 @@ const elements = {
     tabContents: document.querySelectorAll(".tab-content"),
     stationsGrid: document.getElementById("stations-grid"),
     searchInput: document.getElementById("search-input"),
+    nowPlayingRibbon: document.getElementById("now-playing-ribbon"),
+    nowPlayingRibbonText: document.getElementById("now-playing-ribbon-text"),
     playerBar: document.getElementById("player-bar"),
     playerStation: document.getElementById("player-station"),
     playerShow: document.getElementById("player-show"),
     playerLogo: document.getElementById("player-logo"),
     playPauseBtn: document.getElementById("play-pause-btn"),
     volumeSlider: document.getElementById("volume-slider"),
+    volumeValue: document.getElementById("volume-value"),
     audioPlayer: document.getElementById("audio-player"),
     schedulesList: document.getElementById("schedules-list"),
     createScheduleBtn: document.getElementById("create-schedule-btn"),
@@ -81,15 +84,15 @@ function renderStationCard(station, show = null) {
     const isPlaying = isCurrentStation && state.isPlaying;
     const isLoading = isCurrentStation && state.isLoading;
 
-    let buttonIcon = "▶️";
-    if (isLoading) buttonIcon = "⏳";
-    else if (isPlaying) buttonIcon = "⏸️";
+    let buttonIcon = "▶";
+    if (isLoading) buttonIcon = "⌛";
+    else if (isPlaying) buttonIcon = "⏸";
 
     let showInfoHTML = "";
     if (show) {
         const scheduleBtnHTML =
             typeof openAddToScheduleModal === "function"
-                ? `<button class="schedule-add-btn" data-station-id="${station.id}" data-show-name="${show.title || ""}">📅 Add to Schedule</button>`
+                ? `<button class="schedule-add-btn" data-station-id="${station.id}" data-show-name="${show.title || ""}">+ Add to schedule</button>`
                 : "";
 
         const showGenres = show.genres || (show.genre ? [show.genre] : []);
@@ -212,13 +215,19 @@ function normalizeWebsiteUrl(url) {
 
 function setMapStatus(message = "") {
     if (!elements.mapStatus) return;
-    if (!message) {
-        elements.mapStatus.classList.add("hidden");
-        elements.mapStatus.textContent = "";
-        return;
+    // Per UX preference, keep map status copy hidden.
+    elements.mapStatus.classList.add("hidden");
+    elements.mapStatus.textContent = "";
+}
+
+function setVolume(level) {
+    const parsed = Number(level);
+    const safeLevel = Number.isFinite(parsed) ? Math.max(0, Math.min(100, parsed)) : 80;
+    elements.volumeSlider.value = String(safeLevel);
+    elements.audioPlayer.volume = safeLevel / 100;
+    if (elements.volumeValue) {
+        elements.volumeValue.textContent = `${safeLevel}%`;
     }
-    elements.mapStatus.classList.remove("hidden");
-    elements.mapStatus.textContent = message;
 }
 
 function focusStationOnMap(stationId) {
@@ -250,7 +259,7 @@ function renderMapStationsList(stations) {
                         <h3>${escapeHtml(station.name)}</h3>
                         <div class="location">${escapeHtml(formatStationLocation(station))}</div>
                     </div>
-                    <button class="play-btn" data-map-play-station-id="${station.id}">▶️</button>
+                    <button class="play-btn" data-map-play-station-id="${station.id}">▶</button>
                 </div>
             </div>
         `
@@ -324,7 +333,7 @@ function renderMapStations() {
                 <strong>${escapeHtml(station.name)}</strong>
                 <div>${escapeHtml(formatStationLocation(station))}</div>
                 <div class="map-popup-actions">
-                    <button class="map-popup-play-btn" data-map-popup-play-id="${station.id}">▶️ Play</button>
+                    <button class="map-popup-play-btn" data-map-popup-play-id="${station.id}">▶ Play</button>
                     ${websiteHtml}
                 </div>
             </div>
@@ -384,7 +393,7 @@ function renderSchedules() {
             return `
                 <div class="station-card schedule-card" data-schedule-id="${schedule.id}">
                     <div class="station-header">
-                        <div class="station-logo">📅</div>
+                        <div class="station-logo">🗓️</div>
                         <div class="station-info">
                             <h3>${schedule.name}</h3>
                             <div class="location">${slotCount} show${slotCount !== 1 ? "s" : ""} scheduled</div>
@@ -522,7 +531,7 @@ async function playStation(station) {
         try {
             const waitForPlay = withAttemptListeners();
             elements.audioPlayer.src = step.url;
-            elements.audioPlayer.volume = elements.volumeSlider.value / 100;
+            setVolume(elements.volumeSlider.value);
             const playPromise = elements.audioPlayer.play();
             if (playPromise !== undefined) {
                 await playPromise;
@@ -573,8 +582,15 @@ function togglePlay(station) {
 }
 
 function updatePlayerUI() {
+    const setRibbon = (message, isVisible = true) => {
+        if (!elements.nowPlayingRibbon || !elements.nowPlayingRibbonText) return;
+        elements.nowPlayingRibbonText.textContent = message;
+        elements.nowPlayingRibbon.classList.toggle("hidden", !isVisible);
+    };
+
     if (!state.currentStation) {
         elements.playerBar.classList.add("hidden");
+        setRibbon("Now Playing: --", false);
         return;
     }
 
@@ -583,14 +599,17 @@ function updatePlayerUI() {
     elements.playerShow.textContent = state.currentStation.callsign || "";
 
     if (state.isLoading) {
-        elements.playPauseBtn.textContent = "⏳";
+        elements.playPauseBtn.textContent = "⌛";
         elements.playPauseBtn.disabled = true;
+        setRibbon(`Tuning: ${state.currentStation.name}`);
     } else if (state.isPlaying) {
-        elements.playPauseBtn.textContent = "⏸️";
+        elements.playPauseBtn.textContent = "⏸";
         elements.playPauseBtn.disabled = false;
+        setRibbon(`Now Playing: ${state.currentStation.name}`);
     } else {
-        elements.playPauseBtn.textContent = "▶️";
+        elements.playPauseBtn.textContent = "▶";
         elements.playPauseBtn.disabled = false;
+        setRibbon(`Ready: ${state.currentStation.name}`);
     }
 
     const streamInfo = document.getElementById("player-stream-info");
@@ -621,7 +640,7 @@ function updateMediaSession(station) {
         navigator.mediaSession.metadata = new MediaMetadata({
             title: station.name,
             artist: station.callsign || station.name,
-            album: "Radio Agnostic",
+            album: "Radio Free Planet",
             artwork: [{ src: "/icon-192.png", sizes: "192x192", type: "image/png" }],
         });
 
@@ -679,7 +698,7 @@ document.getElementById("add-current-to-schedule")?.addEventListener("click", ()
 });
 
 elements.volumeSlider.addEventListener("input", (e) => {
-    elements.audioPlayer.volume = e.target.value / 100;
+    setVolume(e.target.value);
 });
 
 elements.createScheduleBtn.addEventListener("click", openModal);
@@ -747,6 +766,7 @@ elements.audioPlayer.addEventListener("stalled", () => {
 async function init() {
     const stations = await fetchStations();
     state.stations = stations;
+    setVolume(elements.volumeSlider.value);
 
     renderStationsGrid();
     renderSchedules();

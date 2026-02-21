@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Agnostic</title>
+    <title>Radio Free Planet</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scheduler.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
@@ -14,22 +14,22 @@
     <div id="app">
         <!-- Header -->
         <header class="app-header">
-            <h1>📻 Radio Agnostic</h1>
-            <p class="tagline">Browse stations and build your schedule.</p>
+            <h1>Radio Free Planet</h1>
+            <p class="tagline">radio for the people by the people</p>
         </header>
 
         <!-- Navigation -->
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="browse">
-                <span class="icon">📍</span>
+                <span class="icon">📻</span>
                 <span class="label">Browse</span>
             </button>
             <button class="tab-btn" data-tab="map">
-                <span class="icon">🗺️</span>
+                <span class="icon">🧭</span>
                 <span class="label">Map</span>
             </button>
             <button class="tab-btn" data-tab="schedule">
-                <span class="icon">📅</span>
+                <span class="icon">🗓️</span>
                 <span class="label">Schedule</span>
             </button>
         </nav>
@@ -82,6 +82,10 @@
             </section>
         </main>
 
+        <div id="now-playing-ribbon" class="now-playing-ribbon hidden" aria-live="polite">
+            <span id="now-playing-ribbon-text">Now Playing: --</span>
+        </div>
+
         <!-- Player Bar -->
         <div id="player-bar" class="player-bar hidden">
             <div class="player-info">
@@ -93,11 +97,13 @@
                 </div>
             </div>
             <div class="player-controls">
-                <button id="add-current-to-schedule" class="schedule-btn" title="Add to Schedule">📅</button>
-                <button id="play-pause-btn" class="play-btn">▶️</button>
+                <button id="add-current-to-schedule" class="schedule-btn" title="Add to Schedule">Add</button>
+                <button id="play-pause-btn" class="play-btn">▶</button>
                 <div class="volume-control">
-                    <span class="volume-icon">🔊</span>
+                    <span class="volume-icon" aria-hidden="true">🔊</span>
+                    <span class="volume-label">Volume</span>
                     <input type="range" id="volume-slider" min="0" max="100" value="80">
+                    <span id="volume-value" class="volume-value">80%</span>
                 </div>
             </div>
         </div>

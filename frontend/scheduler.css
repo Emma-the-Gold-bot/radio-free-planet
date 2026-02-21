@@ -307,3 +307,89 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         min-height: 200px;
     }
 }
+
+/* Cyberpunk glass scheduler overrides */
+.timeline-day,
+.slot-card,
+.toast,
+.form-value {
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.015)), var(--bg-secondary);
+    border-color: rgba(130, 155, 206, 0.34);
+    backdrop-filter: blur(16px);
+}
+
+.day-label {
+    color: #8ef0ff;
+    letter-spacing: 0.08em;
+}
+
+.slot-card:hover {
+    border-color: rgba(38, 228, 255, 0.58);
+    box-shadow: 0 0 0 1px rgba(38, 228, 255, 0.25), 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.slot-station {
+    color: #7ce9ff;
+}
+
+.recurring-badge {
+    background: rgba(176, 52, 255, 0.2);
+    border: 1px solid rgba(176, 52, 255, 0.34);
+    color: #d6c4ff;
+}
+
+.slot-delete:hover {
+    background: rgba(255, 64, 133, 0.18);
+    color: #ff79b8;
+}
+
+.schedule-actions {
+    border-top-color: rgba(130, 155, 206, 0.28);
+}
+
+.toast {
+    border-radius: 12px;
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(38, 228, 255, 0.2);
+}
+
+/* Extra metallic depth for scheduler surfaces */
+.timeline-day,
+.slot-card,
+.toast {
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.46),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22),
+        inset 0 -10px 18px rgba(0, 0, 0, 0.22);
+}
+
+.timeline-day::before,
+.slot-card::before,
+.toast::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.2), transparent 26%),
+        linear-gradient(25deg, rgba(0, 0, 0, 0.22), transparent 42%),
+        repeating-linear-gradient(
+            108deg,
+            transparent 0 10px,
+            rgba(192, 214, 255, 0.04) 10px 11px,
+            transparent 11px 20px
+        );
+    mix-blend-mode: screen;
+    opacity: 0.75;
+}
+
+.slot-card::after,
+.timeline-day::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border: 1px solid rgba(212, 229, 255, 0.08);
+    border-radius: inherit;
+    pointer-events: none;
+}

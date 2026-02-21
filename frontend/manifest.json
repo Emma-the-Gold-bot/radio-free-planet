@@ -1,6 +1,6 @@
 {
-    "name": "Radio Agnostic",
-    "short_name": "Radio",
+    "name": "Radio Free Planet",
+    "short_name": "RFP",
     "description": "Find public radio stations, discover what's playing, build your schedule",
     "start_url": "/",
     "display": "standalone",

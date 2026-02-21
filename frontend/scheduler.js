@@ -1,5 +1,5 @@
 /**
- * Radio Agnostic Scheduler Module
+ * Radio Free Planet Scheduler Module
  * Handles user schedules, show slots, and timeline view
  */
 
@@ -310,7 +310,7 @@ function renderSchedules() {
         return `
             <div class="station-card schedule-card" data-schedule-id="${schedule.id}" onclick="openScheduleDetail('${schedule.id}')">
                 <div class="station-header">
-                    <div class="station-logo">📅</div>
+                    <div class="station-logo">🗓️</div>
                     <div class="station-info">
                         <h3>${schedule.name}</h3>
                         <div class="location">${slotCount} show${slotCount !== 1 ? 's' : ''} scheduled</div>

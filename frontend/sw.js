@@ -1,9 +1,9 @@
 /**
- * Service Worker for Radio Agnostic PWA
+ * Service Worker for Radio Free Planet PWA
  * Basic offline support
  */
 
-const CACHE_NAME = 'radio-agnostic-v1';
+const CACHE_NAME = 'radio-free-planet-v1';
 const urlsToCache = [
     '/',
     '/index.html',
