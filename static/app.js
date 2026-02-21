@@ -7,10 +7,10 @@ const CONFIG = {
   stationsUrl: './data/stations.json',
   schedulesUrl: './data/schedules.json',
   nowPlayingUrl: './data/now_playing.json',
-  // Netlify serverless function for CORS proxy
-  // This works with ALL stations (HTTP and HTTPS, CORS blocked or open)
-  corsProxy: '/.netlify/functions/proxy?url=',
-  autoProxy: true
+  // Using only CORS-open stations that work directly on Netlify
+  // Proxy disabled - unnecessary for direct streaming
+  corsProxy: '',
+  autoProxy: false
 };
 
 let state = {
