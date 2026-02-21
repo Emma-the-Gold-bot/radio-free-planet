@@ -1,6 +1,6 @@
 {
   "version": "0.5.0",
-  "last_updated": "2026-02-18T10:10:21.822390",
+  "last_updated": "2026-02-20T12:00:00",
   "stations": [
     {
       "id": "kexp",
@@ -757,12 +757,666 @@
         }
       ],
       "cors_status": "open"
+    },
+    {
+      "id": "wfmu",
+      "callsign": "WFMU",
+      "name": "WFMU 91.1 FM Jersey City",
+      "location": {
+        "city": "Jersey City",
+        "state": "NJ",
+        "country": "USA",
+        "lat": 40.7282,
+        "lng": -74.0776
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream0.wfmu.org/freeform-128k",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wfmu.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "freeform",
+        "experimental"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kalx",
+      "callsign": "KALX",
+      "name": "KALX 90.7 FM Berkeley",
+      "location": {
+        "city": "Berkeley",
+        "state": "CA",
+        "country": "USA",
+        "lat": 37.8715,
+        "lng": -122.273
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.kalx.berkeley.edu:8000/kalx-128.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kalx.berkeley.edu",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "eclectic",
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wcbn",
+      "callsign": "WCBN",
+      "name": "WCBN 88.3 FM Ann Arbor",
+      "location": {
+        "city": "Ann Arbor",
+        "state": "MI",
+        "country": "USA",
+        "lat": 42.2808,
+        "lng": -83.743
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://floyd.wcbn.org:8000/wcbn-hi.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wcbn.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "freeform",
+        "eclectic",
+        "college"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wrfl",
+      "callsign": "WRFL",
+      "name": "WRFL 88.1 FM Lexington",
+      "location": {
+        "city": "Lexington",
+        "state": "KY",
+        "country": "USA",
+        "lat": 38.0406,
+        "lng": -84.5037
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wrfl.fm/stream.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wrfl.fm",
+      "timezone": "America/New_York",
+      "genres": [
+        "eclectic",
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wnyc",
+      "callsign": "WNYC",
+      "name": "WNYC 93.9 FM New York",
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://fm939.wnyc.org/wnycfm",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wnyc.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "news",
+        "public radio",
+        "talk"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wqxr",
+      "callsign": "WQXR",
+      "name": "WQXR 105.9 FM New York",
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream.wqxr.org/wqxr",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wqxr.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "classical",
+        "opera",
+        "public radio"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kut",
+      "callsign": "KUT",
+      "name": "KUT 90.5 FM Austin",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA",
+        "lat": 30.2672,
+        "lng": -97.7431
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streams.kut.org/4426_128.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kut.org",
+      "timezone": "America/Chicago",
+      "genres": [
+        "news",
+        "public radio",
+        "NPR"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kutx",
+      "callsign": "KUTX",
+      "name": "KUTX 98.9 FM Austin",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA",
+        "lat": 30.2672,
+        "lng": -97.7431
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streams.kut.org/4428_192.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kutx.org",
+      "timezone": "America/Chicago",
+      "genres": [
+        "indie",
+        "alternative",
+        "adult album alternative"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kzsu",
+      "callsign": "KZSU",
+      "name": "KZSU 90.1 FM Stanford",
+      "location": {
+        "city": "Stanford",
+        "state": "CA",
+        "country": "USA",
+        "lat": 37.4275,
+        "lng": -122.1697
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://kzsu-streams.stanford.edu/kzsu-1-128.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kzsu.stanford.edu",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "freeform",
+        "eclectic",
+        "college"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kxlu",
+      "callsign": "KXLU",
+      "name": "KXLU 88.9 FM Los Angeles",
+      "location": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA",
+        "lat": 34.0522,
+        "lng": -118.2437
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://www.kxlu.com/mp3/stream.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kxlu.com",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "eclectic",
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wnyu",
+      "callsign": "WNYU",
+      "name": "WNYU 89.1 FM New York",
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wnyu-stream.nyud.net:8000/wnyu128",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wnyu.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "freeform",
+        "college",
+        "eclectic"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wrek",
+      "callsign": "WREK",
+      "name": "WREK 91.1 FM Atlanta",
+      "location": {
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA",
+        "lat": 33.749,
+        "lng": -84.388
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wrek.org:8000/wrek_live",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wrek.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "freeform",
+        "eclectic",
+        "college"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wxy",
+      "callsign": "WXYC",
+      "name": "WXYC 89.3 FM Chapel Hill",
+      "location": {
+        "city": "Chapel Hill",
+        "state": "NC",
+        "country": "USA",
+        "lat": 35.9132,
+        "lng": -79.0558
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://audio-mp3.ibiblio.org:8000/wxyc.mp3",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wxyc.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "eclectic"
+      ],
+      "cors_status": "open"
+    },
+    {
+      "id": "kvrx",
+      "callsign": "KVRX",
+      "name": "KVRX 91.7 FM Austin",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA",
+        "lat": 30.2672,
+        "lng": -97.7431
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://kvrx.org/live",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kvrx.org",
+      "timezone": "America/Chicago",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wtbs",
+      "callsign": "WTBS",
+      "name": "WTBS 89.1 FM Atlanta",
+      "location": {
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA",
+        "lat": 33.749,
+        "lng": -84.388
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wtbs.urbanstream.net:8010/;",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wtbs.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "eclectic"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wrsu",
+      "callsign": "WRSU",
+      "name": "WRSU 88.7 FM New Brunswick",
+      "location": {
+        "city": "New Brunswick",
+        "state": "NJ",
+        "country": "USA",
+        "lat": 40.4862,
+        "lng": -74.4518
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wrus.radio.ru.edu:8000/wrsu",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wrsu.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "eclectic"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wvum",
+      "callsign": "WVUM",
+      "name": "WVUM 90.5 FM Miami",
+      "location": {
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA",
+        "lat": 25.7617,
+        "lng": -80.1918
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://www.wvum.org:8000/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wvum.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "eclectic"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kpsu",
+      "callsign": "KPSU",
+      "name": "KPSU 98.1 FM Portland",
+      "location": {
+        "city": "Portland",
+        "state": "OR",
+        "country": "USA",
+        "lat": 45.5152,
+        "lng": -122.6784
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.kpsu.org:8080/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kpsu.org",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "kcsb",
+      "callsign": "KCSB",
+      "name": "KCSB 91.9 FM Santa Barbara",
+      "location": {
+        "city": "Santa Barbara",
+        "state": "CA",
+        "country": "USA",
+        "lat": 34.4208,
+        "lng": -119.6982
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streamer.kcsb.org:80/kcsb",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://kcsb.org",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wknc",
+      "callsign": "WKNC",
+      "name": "WKNC 88.1 FM Raleigh",
+      "location": {
+        "city": "Raleigh",
+        "state": "NC",
+        "country": "USA",
+        "lat": 35.7796,
+        "lng": -78.6382
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wknc.sma11.in:8000/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wknc.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wprb",
+      "callsign": "WPRB",
+      "name": "WPRB 103.3 FM Princeton",
+      "location": {
+        "city": "Princeton",
+        "state": "NJ",
+        "country": "USA",
+        "lat": 40.3573,
+        "lng": -74.6672
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wprb.com/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wprb.com",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wkdu",
+      "callsign": "WKDU",
+      "name": "WKDU 91.7 FM Philadelphia",
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA",
+        "lat": 39.9526,
+        "lng": -75.1652
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream.wkdu.org:8000/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wkdu.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wzbc",
+      "callsign": "WZBC",
+      "name": "WZBC 90.3 FM Newton",
+      "location": {
+        "city": "Newton",
+        "state": "MA",
+        "country": "USA",
+        "lat": 42.337,
+        "lng": -71.2092
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wzbc.org/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wzbc.org",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
+    },
+    {
+      "id": "wvfi",
+      "callsign": "WVFI",
+      "name": "WVFI 90.5 FM Notre Dame",
+      "location": {
+        "city": "Notre Dame",
+        "state": "IN",
+        "country": "USA",
+        "lat": 41.7056,
+        "lng": -86.2353
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wvfi.nd.edu/stream",
+          "quality": "high",
+          "is_primary": true
+        }
+      ],
+      "website": "https://wvfi.org",
+      "timezone": "America/Indiana/Indianapolis",
+      "genres": [
+        "college",
+        "freeform"
+      ],
+      "cors_status": "blocked"
     }
-  ],
-  "stats": {
-    "total": 50,
-    "cors_open": 39,
-    "cors_blocked": 11
-  },
-  "count": 26
+  ]
 }
