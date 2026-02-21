@@ -1,0 +1,4 @@
+  File "/home/emma/.openclaw/workspace/projects/radio-agnostic/backend/stream_validator.py", line 138
+    icy_br = response.headers.get("icy
+                                  ^
+SyntaxError: unterminated string literal (detected at line 138)

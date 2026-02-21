@@ -1,0 +1,64 @@
+Testing 41 fallback streams...
+
+================================================================================
+FALLBACK STREAM VALIDATION RESULTS
+================================================================================
+
+✅ WORKS IN BROWSER (7):
+  🌐 WCBN Ann Arbor                 | ?kbps   
+  🌐 WRFL Lexington (Direct)        | ?kbps   
+  🌐 NPR Program Stream             | 96kbps  
+  🌐 KEXP (Confirm)                 | 128kbps 
+  🌐 CJSW (Confirm)                 | 128kbps 
+  🌐 WMSE (Confirm)                 | ?kbps   
+  🌐 WRFL (Confirm)                 | ?kbps   
+
+🔒 NEEDS CORS PROXY (8):
+  🔒 WNYC 93.9 FM                   | CORS: http://localhost:3000
+  🔒 WQXR 105.9 FM                  | CORS: http://localhost:3000
+  🔒 WQXR New Sounds                | CORS: http://localhost:3000
+  🔒 WQXR Operavore                 | CORS: http://localhost:3000
+  🔒 KUT Austin                     | CORS: http://localhost:3000
+  🔒 KUTX Austin                    | CORS: http://localhost:3000
+  🔒 KZSU Stanford                  | CORS: none
+  🔒 WFMU Ichiban (HTTP)            | CORS: https://scrobblerad.io
+
+❌ UNAVAILABLE (7):
+  ❌ KDVS Davis (Icecast)           | Cannot connect to host icecast.kdvs
+  ❌ KSCO Santa Cruz                | Cannot connect to host streaming.ks
+  ❌ KKUP San Jose                  | Cannot connect to host streams.kkup
+  ❌ WNCW Spindale                  | Cannot connect to host audio-ice.wn
+  ❌ CIUT Toronto                   | Cannot connect to host stream2.ciut
+  ❌ CKUT Montreal (Direct)         | Cannot connect to host icecast.ckut
+  ❌ CHUO Ottawa (Direct)           | Cannot connect to host icecast.chuo
+
+⏱️ TIMEOUT (3):
+  ⏱️  KDVS Davis (Direct)           
+  ⏱️  WTUL New Orleans              
+  ⏱️  CFMU Hamilton                 
+
+❓ NEEDS INVESTIGATION (16):
+  ❓ WNYC 820 AM                    | http_error
+  ❓ WQXR New Standards             | http_error
+  ❓ KCRW Los Angeles (HTTP)        | http_error
+  ❓ WBUR Boston (HTTP)             | http_error
+  ❓ WXPN Philadelphia (HTTP)       | http_error
+  ❓ WFUV New York (HTTP)           | http_error
+  ❓ WBGO Jazz (Alt)                | http_error
+  ❓ WKSU Kent (Alt)                | http_error
+  ❓ WUNC Chapel Hill (Alt)         | http_error
+  ❓ WAMU DC (Alt)                  | http_error
+  ❓ KPER Union City                | http_error
+  ❓ WFMU Drumheller (HTTP)         | http_error
+  ❓ WFMU Give Drummer (HTTP)       | http_error
+  ❓ WFMU Utrillo (HTTP)            | http_error
+  ❓ WFMU Downtown Soul (HTTP)      | http_error
+  ❓ NPR News Now                   | http_error
+
+================================================================================
+Total tested:     41
+Browser-ready:    7 (17.1%)
+Needs proxy:      8 (19.5%)
+Dead/unreachable: 10 (24.4%)
+
+Results saved to fallback_results.json

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Agnostic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scheduler.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>📻 Radio Agnostic</h1>
+            <p class="tagline">Find what's playing. Build your schedule.</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="discover">
+                <span class="icon">🔍</span>
+                <span class="label">Discover</span>
+            </button>
+            <button class="tab-btn" data-tab="schedule">
+                <span class="icon">📅</span>
+                <span class="label">Schedule</span>
+            </button>
+            <button class="tab-btn" data-tab="browse">
+                <span class="icon">📍</span>
+                <span class="label">Browse</span>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Discover Tab -->
+            <section id="discover-tab" class="tab-content active">
+                <div class="filters">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search stations or shows...">
+                    </div>
+                    <div class="genre-filters" id="genre-filters">
+                        <!-- Genre pills populated by JS -->
+                    </div>
+                </div>
+                <div class="now-playing-feed" id="now-playing-feed">
+                    <div class="loading">Loading stations...</div>
+                </div>
+            </section>
+
+            <!-- Schedule Tab -->
+            <section id="schedule-tab" class="tab-content">
+                <div class="schedule-header">
+                    <h2>Your Schedules</h2>
+                    <button id="create-schedule-btn" class="btn-primary">+ New Schedule</button>
+                </div>
+                <div id="schedules-list">
+                    <div class="empty-state">
+                        <p>No schedules yet. Create one to get started.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browse Tab -->
+            <section id="browse-tab" class="tab-content">
+                <div class="browse-header">
+                    <h2>Stations</h2>
+                </div>
+                <div class="stations-grid" id="stations-grid">
+                    <!-- Stations populated by JS -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Player Bar -->
+        <div id="player-bar" class="player-bar hidden">
+            <div class="player-info">
+                <div class="station-logo" id="player-logo">📻</div>
+                <div class="player-text">
+                    <div class="station-name" id="player-station">Select a station</div>
+                    <div class="show-name" id="player-show">--</div>
+                    <div class="stream-info" id="player-stream-info"></div>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button id="add-current-to-schedule" class="schedule-btn" title="Add to Schedule">📅</button>
+                <button id="play-pause-btn" class="play-btn">▶️</button>
+                <div class="volume-control">
+                    <span class="volume-icon">🔊</span>
+                    <input type="range" id="volume-slider" min="0" max="100" value="80">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="schedule-modal" class="modal hidden">
+            <div class="modal-content">
+                <header>
+                    <h3>Create Schedule</h3>
+                    <button class="close-btn">&times;</button>
+                </header>
+                <form id="schedule-form">
+                    <div class="form-group">
+                        <label for="schedule-name">Schedule Name</label>
+                        <input type="text" id="schedule-name" placeholder="e.g., Workday Morning">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary close-modal">Cancel</button>
+                        <button type="submit" class="btn-primary">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Audio Element -->
+        <audio id="audio-player" preload="none"></audio>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="scheduler.js"></script>
+</body>
+</html>
