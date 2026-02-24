@@ -1,6 +1,6 @@
 {
-  "version": "0.8.0",
-  "last_updated": "2026-02-21T21:18:00Z",
+  "version": "0.8.9",
+  "last_updated": "2026-02-24T03:50:28.036610+00:00",
   "stations": [
     {
       "id": "kexp",
@@ -73,7 +73,7 @@
       "streams": [
         {
           "format": "mp3",
-          "url": "https://wmse.streamguys1.com/wmse128mp3",
+          "url": "https://wmse.streamguys1.com/wmselivemp3",
           "quality": "high",
           "is_primary": true
         }
@@ -459,7 +459,7 @@
         "electronic"
       ],
       "cors_status": "open",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "threads",
@@ -514,7 +514,7 @@
         "deep house"
       ],
       "cors_status": "open",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "kzfr",
@@ -599,7 +599,7 @@
         "eclectic"
       ],
       "cors_status": "open",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "kiss-2020s",
@@ -886,7 +886,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "validated"
+      "health_status": "bad"
     },
     {
       "id": "cfnj-99-1-saint-gabriel-de-b",
@@ -944,7 +944,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "ches-91-7-erin-radio-on",
@@ -1179,7 +1179,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "kpoo-89-5-san-francisco-ca",
@@ -1208,7 +1208,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "cfim-92-7-cap-aux-meules-qc",
@@ -1237,7 +1237,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "radio-k-real-college-radio-k",
@@ -1296,7 +1296,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "fraser-coast-fm-hervey-bay-1",
@@ -1354,7 +1354,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "waps-91-3-the-summit-akron-o",
@@ -1499,7 +1499,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "hochschulradio-aachen",
@@ -1528,7 +1528,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "cfta-107-9-tantramar-fm-amhe",
@@ -1586,7 +1586,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "nts-radio-2",
@@ -1645,7 +1645,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "wired-fm-fm-99-9-limerick-ir",
@@ -1762,7 +1762,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "kdna-91-9-la-voz-del-campesi",
@@ -1850,7 +1850,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "wbez-hd2-vocalo-stream-chica",
@@ -1995,7 +1995,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "radio-blau",
@@ -2024,7 +2024,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "kcep-88-1-power-88-las-vegas",
@@ -2169,7 +2169,7 @@
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",
-      "health_status": "bad"
+      "health_status": "validated"
     },
     {
       "id": "cjbb-103-1-the-train-engleha",
@@ -2427,6 +2427,1402 @@
       "timezone": "America/New_York",
       "genres": [
         "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kbia",
+      "callsign": "KBIA",
+      "name": "KBIA 91.3 FM (University of Missouri) Columbia, MO",
+      "location": {
+        "city": "Columbia",
+        "state": "MO",
+        "country": "USA",
+        "lat": 38.9517,
+        "lng": -92.3341
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://das-sa43.cdnstream1.com/6062",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kbia.org/",
+      "timezone": "America/Chicago",
+      "genres": [
+        "college",
+        "public radio",
+        "news"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kuni-ipr",
+      "callsign": "KUNI",
+      "name": "KUNI 90.9 FM Iowa Public Radio (University of Northern Iowa) Cedar Falls, IA",
+      "location": {
+        "city": "Cedar Falls",
+        "state": "IA",
+        "country": "USA",
+        "lat": 42.5349,
+        "lng": -92.4453
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://studioone-stream.iowapublicradio.org/StudioOne.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.iowapublicradio.org/",
+      "timezone": "America/Chicago",
+      "genres": [
+        "college",
+        "public radio",
+        "news",
+        "classical"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wniu",
+      "callsign": "WNIU",
+      "name": "WNIU 90.5 FM (Northern Illinois University) DeKalb, IL",
+      "location": {
+        "city": "DeKalb",
+        "state": "IL",
+        "country": "USA",
+        "lat": 41.9295,
+        "lng": -88.7504
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://northernpr.streamguys1.com/WNIU",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.northernpublicradio.org/",
+      "timezone": "America/Chicago",
+      "genres": [
+        "college",
+        "public radio",
+        "news",
+        "talk"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wkar",
+      "callsign": "WKAR",
+      "name": "WKAR 90.5 FM (Michigan State University) East Lansing, MI",
+      "location": {
+        "city": "East Lansing",
+        "state": "MI",
+        "country": "USA",
+        "lat": 42.731,
+        "lng": -84.5522
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wkar.streamguys1.com/wkarfm",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.wkar.org/",
+      "timezone": "America/Detroit",
+      "genres": [
+        "college",
+        "public radio",
+        "news",
+        "classical"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wcbn",
+      "callsign": "WCBN",
+      "name": "WCBN 88.3 FM (University of Michigan) Ann Arbor, MI",
+      "location": {
+        "city": "Ann Arbor",
+        "state": "MI",
+        "country": "USA",
+        "lat": 42.2808,
+        "lng": -83.743
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://floyd.wcbn.org:8443/wcbn-hd.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.wcbn.org/",
+      "timezone": "America/Detroit",
+      "genres": [
+        "college",
+        "community",
+        "freeform",
+        "alternative"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kqal",
+      "callsign": "KQAL",
+      "name": "KQAL 89.5 FM (Winona State University) Winona, MN",
+      "location": {
+        "city": "Winona",
+        "state": "MN",
+        "country": "USA",
+        "lat": 44.049963,
+        "lng": -91.639315
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://kqallive.winona.edu:8000/kqal.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kqal.org/",
+      "timezone": "America/Chicago",
+      "genres": [
+        "college",
+        "community",
+        "public radio",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kugs",
+      "callsign": "KUGS",
+      "name": "KUGS 89.3 FM (Western Washington University) Bellingham, WA",
+      "location": {
+        "city": "Bellingham",
+        "state": "WA",
+        "country": "USA",
+        "lat": 48.7519,
+        "lng": -122.4787
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://peridot.streamguys.com:7170/kugs-mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://as.wwu.edu/kugs",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "alternative"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kwva",
+      "callsign": "KWVA",
+      "name": "KWVA 88.1 FM (University of Oregon) Eugene, OR",
+      "location": {
+        "city": "Eugene",
+        "state": "OR",
+        "country": "USA",
+        "lat": 44.0521,
+        "lng": -123.0868
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://kwvaradio.uoregon.edu:8000/stream/1/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kwva.uoregon.edu/",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "freeform",
+        "indie",
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kxsu",
+      "callsign": "KXSU",
+      "name": "KXSU 102.1 FM (Seattle University) Seattle, WA",
+      "location": {
+        "city": "Seattle",
+        "state": "WA",
+        "country": "USA",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://c556.fastserv.com/kxsu",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kxsu.org/",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "community",
+        "freeform",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "citr",
+      "callsign": "CiTR",
+      "name": "CiTR 101.9 FM (University of British Columbia) Vancouver, BC",
+      "location": {
+        "city": "Vancouver",
+        "state": "BC",
+        "country": "Canada",
+        "lat": 49.2827,
+        "lng": -123.1207
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://live.citr.ca/live.aac",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.citr.ca/",
+      "timezone": "America/Vancouver",
+      "genres": [
+        "college",
+        "community",
+        "independent",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kcsu",
+      "callsign": "KCSU",
+      "name": "KCSU 90.5 FM (Colorado State University) Fort Collins, CO",
+      "location": {
+        "city": "Fort Collins",
+        "state": "CO",
+        "country": "USA",
+        "lat": 40.5853,
+        "lng": -105.0844
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://listen.kcsufm.com/stream?nocache=1770828530774",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kcsufm.com/",
+      "timezone": "America/Denver",
+      "genres": [
+        "college",
+        "community",
+        "alternative",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kunm",
+      "callsign": "KUNM",
+      "name": "KUNM 89.9 FM (University of New Mexico) Albuquerque, NM",
+      "location": {
+        "city": "Albuquerque",
+        "state": "NM",
+        "country": "USA",
+        "lat": 35.0844,
+        "lng": -106.6504
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KUNMFM_128.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kunm.org/",
+      "timezone": "America/Denver",
+      "genres": [
+        "college",
+        "public radio",
+        "news",
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kglt",
+      "callsign": "KGLT",
+      "name": "KGLT 91.9 FM (Montana State University) Bozeman, MT",
+      "location": {
+        "city": "Bozeman",
+        "state": "MT",
+        "country": "USA",
+        "lat": 45.677,
+        "lng": -111.0429
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://shoutcast.kglt.net:8000/;",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://kglt.net/",
+      "timezone": "America/Denver",
+      "genres": [
+        "college",
+        "public radio",
+        "alternative",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kuoi",
+      "callsign": "KUOI",
+      "name": "KUOI 89.3 FM (University of Idaho) Moscow, ID",
+      "location": {
+        "city": "Moscow",
+        "state": "ID",
+        "country": "USA",
+        "lat": 46.7324,
+        "lng": -117.0002
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://s2.radio.co/sedf30688d/listen",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.kuoi.org/",
+      "timezone": "America/Los_Angeles",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "indie"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "kuwr",
+      "callsign": "KUWR",
+      "name": "KUWR 91.9 FM (University of Wyoming) Laramie, WY",
+      "location": {
+        "city": "Laramie",
+        "state": "WY",
+        "country": "USA",
+        "lat": 41.3114,
+        "lng": -105.5911
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wyoming-public-ice.streamguys1.com/WPR128MP3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.wyomingpublicmedia.org/",
+      "timezone": "America/Denver",
+      "genres": [
+        "college",
+        "public radio",
+        "news",
+        "classical"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wmbr",
+      "callsign": "WMBR",
+      "name": "WMBR 88.1 FM (MIT) Cambridge, MA",
+      "location": {
+        "city": "Cambridge",
+        "state": "MA",
+        "country": "USA",
+        "lat": 42.3736,
+        "lng": -71.1097
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://wmbr.org:8000/hi",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wmbr.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "community",
+        "freeform",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wfmu-main",
+      "callsign": "WFMU",
+      "name": "WFMU 91.1 FM (Upsala College legacy) Jersey City, NJ",
+      "location": {
+        "city": "Jersey City",
+        "state": "NJ",
+        "country": "USA",
+        "lat": 40.7178,
+        "lng": -74.0431
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://stream2.wfmu.org/freeform-128k",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wfmu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "independent"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wprb",
+      "callsign": "WPRB",
+      "name": "WPRB 103.3 FM (Princeton University) Princeton, NJ",
+      "location": {
+        "city": "Princeton",
+        "state": "NJ",
+        "country": "USA",
+        "lat": 40.3573,
+        "lng": -74.6672
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://wprb.streamguys1.com/live",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wprb.com/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wxpn",
+      "callsign": "WXPN",
+      "name": "WXPN 88.5 FM (University of Pennsylvania) Philadelphia, PA",
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA",
+        "lat": 39.9526,
+        "lng": -75.1652
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wxpnhi.xpn.org/xpnhi",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://xpn.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "public radio",
+        "indie",
+        "alternative"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wkdu",
+      "callsign": "WKDU",
+      "name": "WKDU 91.7 FM (Drexel University) Philadelphia, PA",
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA",
+        "lat": 39.9526,
+        "lng": -75.1652
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://streams.wkdu.org/listen.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wkdu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "community",
+        "freeform",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wruv",
+      "callsign": "WRUV",
+      "name": "WRUV 90.1 FM (University of Vermont) Burlington, VT",
+      "location": {
+        "city": "Burlington",
+        "state": "VT",
+        "country": "USA",
+        "lat": 44.4759,
+        "lng": -73.2121
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://icecast.uvm.edu:8005/wruv_fm_128",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wruv.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "indie"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wrpi",
+      "callsign": "WRPI",
+      "name": "WRPI 91.5 FM (Rensselaer Polytechnic Institute) Troy, NY",
+      "location": {
+        "city": "Troy",
+        "state": "NY",
+        "country": "USA",
+        "lat": 42.7284,
+        "lng": -73.6918
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream.wrpi.org/mp3-320.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wrpi.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "alternative"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wunh",
+      "callsign": "WUNH",
+      "name": "WUNH 91.3 FM (University of New Hampshire) Durham, NH",
+      "location": {
+        "city": "Durham",
+        "state": "NH",
+        "country": "USA",
+        "lat": 43.1334,
+        "lng": -70.9264
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://s9.viastreaming.net:9000/;.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wunh.unh.edu/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wnhu",
+      "callsign": "WNHU",
+      "name": "WNHU 88.7 FM (University of New Haven) West Haven, CT",
+      "location": {
+        "city": "West Haven",
+        "state": "CT",
+        "country": "USA",
+        "lat": 41.2706,
+        "lng": -72.946
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://wnhu-stream1.newhaven.edu:8051/wnhu",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wnhu.net/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "community",
+        "alternative",
+        "freeform"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "wnyu",
+      "callsign": "WNYU",
+      "name": "WNYU 89.1 FM (New York University) New York, NY",
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://cinema.acs.its.nyu.edu:8000/wnyu128.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://wnyu.org/",
+      "timezone": "America/New_York",
+      "genres": [
+        "college",
+        "freeform",
+        "community",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "sr-p1",
+      "callsign": "SR P1",
+      "name": "Sveriges Radio P1 (Public Radio) Stockholm, Sweden",
+      "location": {
+        "city": "Stockholm",
+        "state": "SE",
+        "country": "Sweden",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://live1.sr.se/p1-mp3-96",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.sverigesradio.se/p1",
+      "timezone": "Europe/Stockholm",
+      "genres": [
+        "public radio",
+        "news",
+        "talk",
+        "culture"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "sr-p2",
+      "callsign": "SR P2",
+      "name": "Sveriges Radio P2 (Public Radio) Stockholm, Sweden",
+      "location": {
+        "city": "Stockholm",
+        "state": "SE",
+        "country": "Sweden",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://live1.sr.se/p2-mp3-96",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.sverigesradio.se/p2",
+      "timezone": "Europe/Stockholm",
+      "genres": [
+        "public radio",
+        "classical",
+        "culture"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "nrk-p2",
+      "callsign": "NRK P2",
+      "name": "NRK P2 (Public Radio) Oslo, Norway",
+      "location": {
+        "city": "Oslo",
+        "state": "NO",
+        "country": "Norway",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p2_aac_h",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://radio.nrk.no/direkte/p2",
+      "timezone": "Europe/Oslo",
+      "genres": [
+        "public radio",
+        "news",
+        "culture",
+        "talk"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "dr-p1",
+      "callsign": "DR P1",
+      "name": "DR P1 (Public Radio) Copenhagen, Denmark",
+      "location": {
+        "city": "Copenhagen",
+        "state": "DK",
+        "country": "Denmark",
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://live-icy.gss.dr.dk/A/A03H.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.dr.dk/radio/live/p1",
+      "timezone": "Europe/Copenhagen",
+      "genres": [
+        "public radio",
+        "news",
+        "talk",
+        "culture"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "dr-p2",
+      "callsign": "DR P2",
+      "name": "DR P2 (Public Radio) Copenhagen, Denmark",
+      "location": {
+        "city": "Copenhagen",
+        "state": "DK",
+        "country": "Denmark",
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://live-icy.gss.dr.dk/A/A04H.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.dr.dk/radio/live/p2",
+      "timezone": "Europe/Copenhagen",
+      "genres": [
+        "public radio",
+        "classical",
+        "culture"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "yle-radio-suomi-helsinki",
+      "callsign": "YLE RS",
+      "name": "Yle Radio Suomi Helsinki (Public Radio), Finland",
+      "location": {
+        "city": "Helsinki",
+        "state": "FI",
+        "country": "Finland",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://icecast.live.yle.fi/radio/YleRS/icecast.audio",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://areena.yle.fi/radio/suora/yle-radio-suomi",
+      "timezone": "Europe/Helsinki",
+      "genres": [
+        "public radio",
+        "news",
+        "talk",
+        "community"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "yle-radio-1",
+      "callsign": "YLE Radio 1",
+      "name": "Yle Radio 1 (Public Radio) Helsinki, Finland",
+      "location": {
+        "city": "Helsinki",
+        "state": "FI",
+        "country": "Finland",
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "http://icecast.live.yle.fi/radio/YleRadio1Hifi/icecast.audio",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://areena.yle.fi/radio/suora/yle-radio-1",
+      "timezone": "Europe/Helsinki",
+      "genres": [
+        "public radio",
+        "culture",
+        "classical",
+        "talk"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-af",
+      "callsign": "Radio AF",
+      "name": "Radio AF (Student Radio) Lund, Sweden",
+      "location": {
+        "city": "Lund",
+        "state": "SE",
+        "country": "Sweden",
+        "lat": 55.7047,
+        "lng": 13.191
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://stream.rcs.revma.com/e3tha8v4dkhvv",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://radioaf.se/",
+      "timezone": "Europe/Stockholm",
+      "genres": [
+        "college",
+        "student radio",
+        "community",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "srib-studentradioen-bergen",
+      "callsign": "SRIB",
+      "name": "Studentradioen i Bergen (Student Radio), Norway",
+      "location": {
+        "city": "Bergen",
+        "state": "NO",
+        "country": "Norway",
+        "lat": 60.3913,
+        "lng": 5.3221
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://radio.srib.no/listen/studentradioen_i_bergen/srib.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://srib.no/",
+      "timezone": "Europe/Oslo",
+      "genres": [
+        "college",
+        "student radio",
+        "community",
+        "variety"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-revolt",
+      "callsign": "Radio Revolt",
+      "name": "Radio Revolt (Student Radio) Trondheim, Norway",
+      "location": {
+        "city": "Trondheim",
+        "state": "NO",
+        "country": "Norway",
+        "lat": 63.4305,
+        "lng": 10.3951
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://direkte.radiorevolt.no/revolt.aac",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://radiorevolt.no/",
+      "timezone": "Europe/Oslo",
+      "genres": [
+        "college",
+        "student radio",
+        "rock",
+        "eclectic"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "northern-metal-radio",
+      "callsign": "NMR",
+      "name": "Northern Metal Radio, Sweden",
+      "location": {
+        "city": "Sweden",
+        "state": "SE",
+        "country": "Sweden",
+        "lat": 59.3293,
+        "lng": 18.0686
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://dc5.serverse.com/proxy/lvzgnvcj/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://northernmetalradio.com/",
+      "timezone": "Europe/Stockholm",
+      "genres": [
+        "metal",
+        "death metal",
+        "extreme metal"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "bad"
+    },
+    {
+      "id": "metal-express-radio",
+      "callsign": "MER",
+      "name": "Metal Express Radio, Norway",
+      "location": {
+        "city": "Oslo",
+        "state": "NO",
+        "country": "Norway",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "http://s39.myradiostream.com:11590/;",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://metalexpressradio.com/",
+      "timezone": "Europe/Oslo",
+      "genres": [
+        "metal",
+        "hard rock",
+        "classic metal"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-rock-no",
+      "callsign": "Radio Rock",
+      "name": "Radio Rock Norway",
+      "location": {
+        "city": "Oslo",
+        "state": "NO",
+        "country": "Norway",
+        "lat": 59.9139,
+        "lng": 10.7522
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://live-bauerno.sharp-stream.com/radiorock_no_mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.radiorock.no/",
+      "timezone": "Europe/Oslo",
+      "genres": [
+        "hard rock",
+        "metal",
+        "rock"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "rockantenne-heavy-metal",
+      "callsign": "ROCK ANTENNE",
+      "name": "ROCK ANTENNE Heavy Metal, Germany",
+      "location": {
+        "city": "Munich",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 48.1351,
+        "lng": 11.582
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://mp3channels.webradio.rockantenne.de/heavy-metal",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.rockantenne.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "metal",
+        "heavy metal",
+        "hard rock"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "radio-bob-death-metal",
+      "callsign": "Radio BOB!",
+      "name": "Radio BOB! Death Metal, Germany",
+      "location": {
+        "city": "Kassel",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 51.3127,
+        "lng": 9.4797
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://streams.radiobob.de/deathmetal/mp3-192/streams.radiobob.de/",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.radiobob.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "metal",
+        "death metal",
+        "extreme metal"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "metal-only",
+      "callsign": "METAL ONLY",
+      "name": "METAL ONLY, Germany",
+      "location": {
+        "city": "Germany",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 51.1657,
+        "lng": 10.4515
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://metalonly.sp.radio.fm/stream",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.metal-only.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "metal",
+        "black metal",
+        "death metal"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "rpr1-heavy-metal",
+      "callsign": "RPR1.",
+      "name": "RPR1. Heavy Metal, Germany",
+      "location": {
+        "city": "Ludwigshafen",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 49.4774,
+        "lng": 8.4452
+      },
+      "streams": [
+        {
+          "format": "aac",
+          "url": "https://stream.rpr1.de/metal/mp3-128/radiobrowser",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://www.rpr1.de/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "metal",
+        "heavy metal",
+        "hard rock"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "ia-radio-metal",
+      "callsign": "IA Radio Metal",
+      "name": "IA Radio Metal, France",
+      "location": {
+        "city": "Paris",
+        "state": "FR",
+        "country": "France",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://iaradiometal.ice.infomaniak.ch/iaradiometal-128.mp3",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://iaradiometal.com/",
+      "timezone": "Europe/Paris",
+      "genres": [
+        "metal",
+        "heavy metal",
+        "rock"
+      ],
+      "cors_status": "unknown",
+      "playback_mode": "direct_then_proxy",
+      "health_status": "validated"
+    },
+    {
+      "id": "best-of-rock-metal",
+      "callsign": "Best of Rock FM",
+      "name": "Best Of Rock FM Metal, Germany",
+      "location": {
+        "city": "Berlin",
+        "state": "DE",
+        "country": "Germany",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "streams": [
+        {
+          "format": "mp3",
+          "url": "https://bestofrockfm.stream.vip/metal/mp3-256",
+          "quality": "high",
+          "is_primary": true,
+          "priority": 0
+        }
+      ],
+      "website": "https://bestofrock.fm/",
+      "timezone": "Europe/Berlin",
+      "genres": [
+        "metal",
+        "hard rock",
+        "rock"
       ],
       "cors_status": "unknown",
       "playback_mode": "direct_then_proxy",

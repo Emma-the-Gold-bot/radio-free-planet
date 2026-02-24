@@ -162,11 +162,11 @@
       "playback_mode": "direct_then_proxy",
       "direct": {
         "ok": false,
-        "detail": "[Errno -3] Temporary failure in name resolution"
+        "detail": "status=404"
       },
       "proxy": {
         "ok": false,
-        "detail": "[Errno -3] Temporary failure in name resolution"
+        "detail": "status=404"
       }
     },
     {
@@ -231,12 +231,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -259,12 +259,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -301,12 +301,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -441,12 +441,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": true,
-        "detail": "status=200"
+        "ok": false,
+        "detail": "Server disconnected without sending a response."
       },
       "proxy": {
-        "ok": true,
-        "detail": "ok"
+        "ok": false,
+        "detail": "status=None"
       }
     },
     {
@@ -469,12 +469,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -581,12 +581,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -595,12 +595,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -609,12 +609,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -637,12 +637,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -665,12 +665,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -735,12 +735,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -749,12 +749,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -777,12 +777,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -805,12 +805,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -861,12 +861,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -903,12 +903,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -973,12 +973,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -987,12 +987,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -1057,12 +1057,12 @@
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
       },
       "proxy": {
-        "ok": false,
-        "detail": "status=400"
+        "ok": true,
+        "detail": "ok"
       }
     },
     {
@@ -1180,6 +1180,622 @@
     {
       "station_id": "kunm-89-9-new-mexico-public-",
       "station_name": "KUNM 89.9 New Mexico Public Radio Albuquerque, NM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kbia",
+      "station_name": "KBIA 91.3 FM (University of Missouri) Columbia, MO",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kuni-ipr",
+      "station_name": "KUNI 90.9 FM Iowa Public Radio (University of Northern Iowa) Cedar Falls, IA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wniu",
+      "station_name": "WNIU 90.5 FM (Northern Illinois University) DeKalb, IL",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wkar",
+      "station_name": "WKAR 90.5 FM (Michigan State University) East Lansing, MI",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wcbn",
+      "station_name": "WCBN 88.3 FM (University of Michigan) Ann Arbor, MI",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kqal",
+      "station_name": "KQAL 89.5 FM (Winona State University) Winona, MN",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kugs",
+      "station_name": "KUGS 89.3 FM (Western Washington University) Bellingham, WA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kwva",
+      "station_name": "KWVA 88.1 FM (University of Oregon) Eugene, OR",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kxsu",
+      "station_name": "KXSU 102.1 FM (Seattle University) Seattle, WA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "citr",
+      "station_name": "CiTR 101.9 FM (University of British Columbia) Vancouver, BC",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kcsu",
+      "station_name": "KCSU 90.5 FM (Colorado State University) Fort Collins, CO",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kunm",
+      "station_name": "KUNM 89.9 FM (University of New Mexico) Albuquerque, NM",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kglt",
+      "station_name": "KGLT 91.9 FM (Montana State University) Bozeman, MT",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kuoi",
+      "station_name": "KUOI 89.3 FM (University of Idaho) Moscow, ID",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "kuwr",
+      "station_name": "KUWR 91.9 FM (University of Wyoming) Laramie, WY",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wmbr",
+      "station_name": "WMBR 88.1 FM (MIT) Cambridge, MA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wfmu-main",
+      "station_name": "WFMU 91.1 FM (Upsala College legacy) Jersey City, NJ",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wprb",
+      "station_name": "WPRB 103.3 FM (Princeton University) Princeton, NJ",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wxpn",
+      "station_name": "WXPN 88.5 FM (University of Pennsylvania) Philadelphia, PA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wkdu",
+      "station_name": "WKDU 91.7 FM (Drexel University) Philadelphia, PA",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wruv",
+      "station_name": "WRUV 90.1 FM (University of Vermont) Burlington, VT",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wrpi",
+      "station_name": "WRPI 91.5 FM (Rensselaer Polytechnic Institute) Troy, NY",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wunh",
+      "station_name": "WUNH 91.3 FM (University of New Hampshire) Durham, NH",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wnhu",
+      "station_name": "WNHU 88.7 FM (University of New Haven) West Haven, CT",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "wnyu",
+      "station_name": "WNYU 89.1 FM (New York University) New York, NY",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "sr-p1",
+      "station_name": "Sveriges Radio P1 (Public Radio) Stockholm, Sweden",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "sr-p2",
+      "station_name": "Sveriges Radio P2 (Public Radio) Stockholm, Sweden",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "nrk-p2",
+      "station_name": "NRK P2 (Public Radio) Oslo, Norway",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "dr-p1",
+      "station_name": "DR P1 (Public Radio) Copenhagen, Denmark",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "dr-p2",
+      "station_name": "DR P2 (Public Radio) Copenhagen, Denmark",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "yle-radio-suomi-helsinki",
+      "station_name": "Yle Radio Suomi Helsinki (Public Radio), Finland",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "yle-radio-1",
+      "station_name": "Yle Radio 1 (Public Radio) Helsinki, Finland",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-af",
+      "station_name": "Radio AF (Student Radio) Lund, Sweden",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "srib-studentradioen-bergen",
+      "station_name": "Studentradioen i Bergen (Student Radio), Norway",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-revolt",
+      "station_name": "Radio Revolt (Student Radio) Trondheim, Norway",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "northern-metal-radio",
+      "station_name": "Northern Metal Radio, Sweden",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": false,
+        "detail": "The read operation timed out"
+      },
+      "proxy": {
+        "ok": false,
+        "detail": "timed out"
+      }
+    },
+    {
+      "station_id": "metal-express-radio",
+      "station_name": "Metal Express Radio, Norway",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-rock-no",
+      "station_name": "Radio Rock Norway",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "rockantenne-heavy-metal",
+      "station_name": "ROCK ANTENNE Heavy Metal, Germany",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "radio-bob-death-metal",
+      "station_name": "Radio BOB! Death Metal, Germany",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "metal-only",
+      "station_name": "METAL ONLY, Germany",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "rpr1-heavy-metal",
+      "station_name": "RPR1. Heavy Metal, Germany",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "ia-radio-metal",
+      "station_name": "IA Radio Metal, France",
+      "stream_index": 0,
+      "playback_mode": "direct_then_proxy",
+      "direct": {
+        "ok": true,
+        "detail": "status=200(method=get_fallback)"
+      },
+      "proxy": {
+        "ok": true,
+        "detail": "ok"
+      }
+    },
+    {
+      "station_id": "best-of-rock-metal",
+      "station_name": "Best Of Rock FM Metal, Germany",
       "stream_index": 0,
       "playback_mode": "direct_then_proxy",
       "direct": {

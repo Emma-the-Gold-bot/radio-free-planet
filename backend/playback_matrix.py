@@ -25,7 +25,15 @@ BAD_LIST_PATH = Path(__file__).resolve().parent.parent / "static" / "data" / "ba
 def test_direct(client: httpx.Client, url: str) -> tuple[bool, str]:
     try:
         response = client.head(url, follow_redirects=True, timeout=8.0)
-        return response.status_code == 200, f"status={response.status_code}"
+        if response.status_code == 200:
+            return True, "status=200"
+        # Some stream origins reject HEAD but serve audio for GET.
+        if response.status_code in {400, 405}:
+            with client.stream("GET", url, follow_redirects=True, timeout=8.0) as get_response:
+                if get_response.status_code == 200:
+                    return True, "status=200(method=get_fallback)"
+                return False, f"status={get_response.status_code}"
+        return False, f"status={response.status_code}"
     except Exception as exc:  # pragma: no cover
         return False, str(exc)
 

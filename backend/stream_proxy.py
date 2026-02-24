@@ -111,12 +111,19 @@ def create_router(registry: StationRegistry) -> APIRouter:
                     verify=verify_tls,
                 ) as client:
                     response = await client.head(url, headers={"User-Agent": "RadioAgnostic/0.7"})
+                    status = response.status_code
+                    content_type = response.headers.get("content-type")
+                    if status in {400, 405}:
+                        # Fallback for origins that do not support HEAD on stream endpoints.
+                        async with client.stream("GET", url, headers={"User-Agent": "RadioAgnostic/0.7"}) as get_response:
+                            status = get_response.status_code
+                            content_type = get_response.headers.get("content-type")
                     results.append(
                         {
                             "stream_index": idx,
-                            "healthy": response.status_code == 200,
-                            "status": response.status_code,
-                            "content_type": response.headers.get("content-type"),
+                            "healthy": status == 200,
+                            "status": status,
+                            "content_type": content_type,
                         }
                     )
             except Exception as exc:  # pragma: no cover

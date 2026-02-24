@@ -464,32 +464,6 @@ body {
     display: none;
 }
 
-.now-playing-ribbon {
-    position: fixed;
-    left: 0.85rem;
-    right: 0.85rem;
-    bottom: 4.9rem;
-    z-index: 1001;
-    padding: 0.38rem 0.7rem;
-    border-radius: 999px;
-    font-size: 0.73rem;
-    letter-spacing: 0.03em;
-    font-weight: 600;
-    color: #e9f4ff;
-    background:
-        linear-gradient(150deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03)),
-        linear-gradient(138deg, rgba(41, 230, 255, 0.2), rgba(143, 70, 255, 0.22));
-    border: 1px solid rgba(130, 155, 206, 0.4);
-    box-shadow:
-        0 12px 24px rgba(0, 0, 0, 0.35),
-        inset 0 1px 0 rgba(255, 255, 255, 0.24),
-        inset 0 -8px 14px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(16px);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .player-info {
     display: flex;
     align-items: center;

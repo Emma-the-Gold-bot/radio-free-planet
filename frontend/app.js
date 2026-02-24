@@ -38,8 +38,6 @@ const elements = {
     tabContents: document.querySelectorAll(".tab-content"),
     stationsGrid: document.getElementById("stations-grid"),
     searchInput: document.getElementById("search-input"),
-    nowPlayingRibbon: document.getElementById("now-playing-ribbon"),
-    nowPlayingRibbonText: document.getElementById("now-playing-ribbon-text"),
     playerBar: document.getElementById("player-bar"),
     playerStation: document.getElementById("player-station"),
     playerShow: document.getElementById("player-show"),
@@ -582,15 +580,8 @@ function togglePlay(station) {
 }
 
 function updatePlayerUI() {
-    const setRibbon = (message, isVisible = true) => {
-        if (!elements.nowPlayingRibbon || !elements.nowPlayingRibbonText) return;
-        elements.nowPlayingRibbonText.textContent = message;
-        elements.nowPlayingRibbon.classList.toggle("hidden", !isVisible);
-    };
-
     if (!state.currentStation) {
         elements.playerBar.classList.add("hidden");
-        setRibbon("Now Playing: --", false);
         return;
     }
 
@@ -601,15 +592,12 @@ function updatePlayerUI() {
     if (state.isLoading) {
         elements.playPauseBtn.textContent = "⌛";
         elements.playPauseBtn.disabled = true;
-        setRibbon(`Tuning: ${state.currentStation.name}`);
     } else if (state.isPlaying) {
         elements.playPauseBtn.textContent = "⏸";
         elements.playPauseBtn.disabled = false;
-        setRibbon(`Now Playing: ${state.currentStation.name}`);
     } else {
         elements.playPauseBtn.textContent = "▶";
         elements.playPauseBtn.disabled = false;
-        setRibbon(`Ready: ${state.currentStation.name}`);
     }
 
     const streamInfo = document.getElementById("player-stream-info");
