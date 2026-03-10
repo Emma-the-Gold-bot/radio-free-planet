@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-gis-ai</title>
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <h1>web-gis-ai</h1>
+        <p class="muted">Lean web GIS assistant prototype</p>
+        <div class="panel">
+          <label for="queryInput">Ask about the active map</label>
+          <textarea id="queryInput" rows="4" placeholder="Which layers show erosion?"></textarea>
+          <button id="askButton">Search map schema</button>
+        </div>
+        <div class="panel">
+          <h2>Results</h2>
+          <div id="results"></div>
+        </div>
+      </aside>
+      <main id="map"></main>
+    </div>
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

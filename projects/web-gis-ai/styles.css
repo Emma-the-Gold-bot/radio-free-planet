@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Inter, system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+}
+#app {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  height: 100vh;
+}
+#sidebar {
+  padding: 16px;
+  background: #181818;
+  border-right: 1px solid #2b2b2b;
+  overflow: auto;
+}
+#map {
+  height: 100vh;
+}
+.panel {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #202020;
+}
+textarea, button {
+  width: 100%;
+  margin-top: 8px;
+}
+textarea {
+  background: #0f0f0f;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 8px;
+}
+button {
+  background: #c53535;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover { background: #dd4a4a; }
+.result-item {
+  padding: 8px 0;
+  border-top: 1px solid #333;
+}
+.muted { color: #aaa; }
+.small { font-size: 0.9rem; color: #bbb; }
