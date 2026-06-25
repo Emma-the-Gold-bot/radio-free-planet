@@ -46,6 +46,9 @@ pipelines:
     tester: xiaomi/mimo-v2.5-pro             # writes tests + reviews impl, writes to test/review files only
     judge: z-ai/glm-5.2                      # synthesizes impl + tests + review + verifies acceptance criteria
     timeout_seconds: 1200  # 20min — Slice 1 proved 15min tight on 5230-line App.tsx restructure (2026-06-24)
+    # Note: 2026-06-24 — tester reverted from minimax/minimax-m3 back to xiaomi/mimo-v2.5-pro.
+    #   MiniMax M3 flaked twice (Slice 3.5 10m 8s success, Slice 3.6 32s abort no output).
+    #   Non-deterministic in coder role. MiMo v2.5 Pro proven reliable across Slices 1, 3.5.
     # File scoping rule (enforced by dispatch task spec):
     #   implementer writes: src/types.ts, src/App.tsx, src/components/<Panel>.tsx, src/styles.css
     #   tester writes:      src/**/__tests__/*.test.tsx, SLICE_<n>_REVIEW.md
