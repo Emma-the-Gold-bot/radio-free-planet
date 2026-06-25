@@ -1,0 +1,83 @@
+# Model Assignment Configuration
+# Edit this file to change which models handle which roles.
+# Referenced by dispatch/SKILL.md at dispatch time.
+# Changes take effect immediately — no other files need updating.
+
+# ─── Role Defaults ─────────────────────────────────────────────────
+# Fallback models per role. Pipeline overrides below take precedence.
+
+roles:
+  thinker:
+    primary: z-ai/glm-5.2
+    fallback: google/gemini-3-flash
+  worker:
+    primary: moonshotai/kimi-k2.7-code
+    fallback: xiaomi/mimo-v2.5-pro
+  worker-research:
+    primary: deepseek/deepseek-v4-pro
+    fallback: minimax/minimax-m3
+  judge:
+    primary: z-ai/glm-5.2
+    fallback: deepseek/deepseek-v4-pro
+
+# ─── Pipeline Compositions ─────────────────────────────────────────
+# Models listed here override role defaults for specific pipelines.
+# Names are short aliases. Use `openrouter/` prefix convention in sessions_spawn.
+
+pipelines:
+
+  # ── Code ──────────────────────────────────────────────────────────
+  simple-code:
+    workers: [xiaomi/mimo-v2.5-pro]
+    fusion: false
+    timeout_seconds: 600
+
+  standard-code:
+    panel: code-fusion
+    workers: [moonshotai/kimi-k2.7-code, xiaomi/mimo-v2.5-pro]
+    judge: z-ai/glm-5.2
+    fusion: true
+    timeout_seconds: 900
+
+  complex-code:
+    thinker: z-ai/glm-5.2
+    pattern: complementary   # NOT fusion — implementer + tester write to disjoint file scopes
+    implementer: qwen/qwen3.7-plus           # writes implementation code
+    tester: xiaomi/mimo-v2.5-pro             # writes tests + reviews impl, writes to test/review files only
+    judge: z-ai/glm-5.2                      # synthesizes impl + tests + review + verifies acceptance criteria
+    timeout_seconds: 1200  # 20min — Slice 1 proved 15min tight on 5230-line App.tsx restructure (2026-06-24)
+    # File scoping rule (enforced by dispatch task spec):
+    #   implementer writes: src/types.ts, src/App.tsx, src/components/<Panel>.tsx, src/styles.css
+    #   tester writes:      src/**/__tests__/*.test.tsx, SLICE_<n>_REVIEW.md
+    #   judge reads both and writes: synthesis verdict, merge instructions
+    # Note: 2026-06-24 redesign. Old fusion pattern (parallel writers on same files)
+    #       caused data loss in Slice 3 (Qwen/MiMo race). Qwen won, MiMo's sharper
+    #       self-assessment (moveLayer() limitation, CSS duplicate) was lost.
+    # Note: 2026-06-24 verifier role removed. Judge subsumes verification — already
+    #       checking 8 acceptance criteria with code evidence, separate verifier
+    #       dispatched on top was redundant cost without demonstrated value.
+    #       Tester remains as proactive second lens (writes failing tests).
+
+  # ── Research ──────────────────────────────────────────────────────
+  simple-research:
+    panel: research-fusion
+    workers: [minimax/minimax-m3, deepseek/deepseek-v4-pro]
+    judge: xiaomi/mimo-v2.5-pro
+    fusion: true
+    timeout_seconds: 600
+
+  deep-research:
+    thinker: z-ai/glm-5.2
+    panel: research-fusion
+    workers: [minimax/minimax-m3, deepseek/deepseek-v4-pro]
+    judge: xiaomi/mimo-v2.5-pro
+    fusion: true
+    timeout_seconds: 600
+
+  # ── Design ────────────────────────────────────────────────────────
+  design:
+    panel: design-fusion
+    workers: [z-ai/glm-5.2, moonshotai/kimi-k2.6]
+    judge: google/gemini-3-flash
+    fusion: true
+    timeout_seconds: 600
